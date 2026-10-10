@@ -5,299 +5,607 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MAU Studio</title>
 <meta name="description" content="MAU Studio: cejas efecto Rouse, Juicy Lips, laminado, lifting de pestañas, depilación y remoción láser y limpiezas faciales en Punto Fijo, Falcón. Por Maurymar Barbera.">
+<meta name="theme-color" content="#74263A">
 <meta property="og:title" content="MAU Studio · Cejas y labios en Punto Fijo">
-<meta property="og:description" content="Micropigmentación natural de cejas y labios, correcciones y cuidado de piel. Agenda tu evaluación por WhatsApp.">
+<meta property="og:description" content="Micropigmentación natural de cejas y labios, correcciones y cuidado de piel. Reserva tu cita por WhatsApp.">
 <meta property="og:image" content="hero.jpg">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"MAU Studio","description":"Micropigmentación de cejas (técnica Rouse) y labios (Juicy Lips), laminado de cejas, lifting de pestañas, depilación y remoción láser, limpiezas faciales.","founder":{"@type":"Person","name":"Maurymar Barbera"},"address":{"@type":"PostalAddress","addressLocality":"Punto Fijo","addressRegion":"Falcón","addressCountry":"VE"},"priceRange":"$15 - $200","sameAs":["https://www.instagram.com/maurypmu24_studio/"],"paymentAccepted":"Pago Móvil, Zelle, Binance, efectivo"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"MAU Studio","description":"Micropigmentación de cejas (técnica Rouse) y labios (Juicy Lips), laminado de cejas, lifting de pestañas, depilación y remoción láser, limpiezas faciales.","founder":{"@type":"Person","name":"Maurymar Barbera"},"address":{"@type":"PostalAddress","addressLocality":"Punto Fijo","addressRegion":"Falcón","addressCountry":"VE"},"telephone":"+58 412-108-0408","priceRange":"$15 - $200","sameAs":["https://www.instagram.com/maurypmu24_studio/"],"paymentAccepted":"Pago Móvil, Zelle, Binance, efectivo"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..600&family=Jost:wght@300..600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@300..600&display=swap">
 <style>
+/* =========================================================
+   MAU Studio · estilo burdeos cinematográfico
+   Paleta hermana de MAU by Maury
+   ========================================================= */
 :root{
-  --negro:#141414; --perla:#D6D3D0; --blanco:#FFFFFF; --burdeos:#74263A; --blush:#F3DCE2; --rosa:#C77C91;
-  --bg:#FFFFFF; --bg-alt:#F4F2F0; --ink:#141414; --muted:#5E5A57; --line:#D6D3D0;
-  --deep:#141414; --on-deep:#FFFFFF; --accent:#74263A; --accent-ink:#FFFFFF; --soft:#F3DCE2; --on-soft:#141414;
+  --burdeos:#74263A; --vino:#4A1F2B; --vino-2:#2A1118;
+  --blush:#F3DCE2; --rosa:#E8B4C0; --crema:#FAF5F0; --oro:#C9A46A;
+  --ink:#2A1118; --muted:#6E5258; --line:rgba(116,38,58,.22);
   --serif:"Bodoni Moda", Didot, "Times New Roman", serif;
+  --script:"Allura", "Brush Script MT", cursive;
   --sans:"Jost", "Futura", "Century Gothic", system-ui, sans-serif;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    color-scheme:dark;
-    --bg:#141414; --bg-alt:#1F1E1D; --ink:#F5F4F2; --muted:#BDB8B3; --line:#3A3836;
-    --deep:#2A2827; --on-deep:#FFFFFF; --accent:#C77C91; --accent-ink:#141414; --soft:#2E2226; --on-soft:#F5F4F2;
-  }
-}
-:root[data-theme="dark"]{
-  color-scheme:dark;
-  --bg:#141414; --bg-alt:#1F1E1D; --ink:#F5F4F2; --muted:#BDB8B3; --line:#3A3836;
-  --deep:#2A2827; --on-deep:#FFFFFF; --accent:#C77C91; --accent-ink:#141414; --soft:#2E2226; --on-soft:#F5F4F2;
+  --ease:cubic-bezier(.215,.61,.355,1); /* power3.out */
+  color-scheme:light;
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;font-weight:400}
-.wrap{max-width:1120px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
-h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--crema);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden}
+body.locked{overflow:hidden}
+img,video{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.02;margin:0;letter-spacing:-.015em;text-wrap:balance}
+h1 i,h2 i,h3 i{font-weight:400}
 p{margin:0}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.caps{font-family:var(--sans);text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:500;color:var(--muted)}
-.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 26px;border-radius:999px;border:1px solid transparent;font:500 15px/1 var(--sans);letter-spacing:.04em;text-decoration:none;cursor:pointer;transition:transform .2s ease, background .2s ease}
-.btn:hover{transform:translateY(-1px)}
-.btn-main{background:var(--accent);color:var(--accent-ink)}
-.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
-@media (prefers-reduced-motion: reduce){.btn,.btn:hover{transition:none;transform:none}}
+:focus-visible{outline:2px solid var(--oro);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,48px)}
+.caps{font-family:var(--sans);text-transform:uppercase;letter-spacing:.22em;font-size:12px;font-weight:500}
+.script{font-family:var(--script);font-weight:400;letter-spacing:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 28px;border-radius:999px;border:1px solid transparent;font:500 14px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .5s var(--ease),background .4s var(--ease),color .4s var(--ease)}
+.btn-white{background:#fff;color:var(--burdeos)}
+.btn-white:hover{background:var(--blush)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-burdeos{background:var(--burdeos);color:#fff}
+.btn-burdeos:hover{background:var(--vino)}
+.btn-line{background:transparent;color:var(--burdeos);border-color:var(--burdeos)}
+.btn-line:hover{background:var(--burdeos);color:#fff}
 
-/* top bar */
-.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px}
-.logo{font-family:var(--serif);font-size:24px;letter-spacing:.02em;text-decoration:none}
-.logo em{font-style:italic;color:var(--accent)}
-.top nav{display:flex;gap:22px;flex-wrap:wrap}
-.top nav a{text-decoration:none;font-size:14px;color:var(--muted)}
-.top nav a:hover{color:var(--ink)}
-@media (max-width:640px){.top nav{display:none}}
+/* grano de película */
+body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.07;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-5%)}60%{transform:translate(-2%,4%)}80%{transform:translate(5%,1%)}100%{transform:translate(0,0)}}
 
-/* hero */
-.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:0;background:var(--perla);border-radius:4px;overflow:hidden}
-.hero-copy{padding:clamp(28px,5vw,64px);display:flex;flex-direction:column;justify-content:center;gap:22px;color:#141414}
-.hero-copy .caps{color:#3F3B38}
-.hero h1{font-size:clamp(44px,6.4vw,84px);color:#141414}
-.hero h1 i{color:#74263A}
-.rule{width:72px;height:1px;background:#141414;opacity:.5}
-.hero-copy p.lead{max-width:34ch;font-size:18px;color:#2B2826}
+/* aparición al hacer scroll */
+[data-reveal]{opacity:0;transform:translateY(34px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+[data-reveal].in{opacity:1;transform:none}
+
+/* ---------- cursor personalizado ---------- */
+.cursor{position:fixed;left:0;top:0;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:rgba(243,220,226,.75);border:1px solid rgba(116,38,58,.5);pointer-events:none;z-index:95;transition:width .35s var(--ease),height .35s var(--ease),margin .35s var(--ease),opacity .3s;opacity:0}
+.cursor.big{width:58px;height:58px;margin:-29px 0 0 -29px}
+@media (hover:hover) and (pointer:fine){.cursor{opacity:1}}
+
+/* =========================================================
+   1. INTRO · puerta entre nubes
+   ========================================================= */
+.intro{position:fixed;inset:0;z-index:80;overflow:hidden;cursor:pointer;
+  background:radial-gradient(120% 80% at 50% 10%,#FFF3F6 0%,#F7D5DE 38%,#E8B4C0 70%,#C98A9C 100%)}
+.intro .scene{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;transform-origin:50% 56%;transition:transform 1.9s cubic-bezier(.7,0,.3,1),opacity 1s ease .9s}
+.cloud{position:absolute;border-radius:50%;background:#fff;filter:blur(18px);opacity:.75}
+.cloud::before,.cloud::after{content:"";position:absolute;border-radius:50%;background:inherit}
+.cloud::before{width:70%;height:120%;left:12%;top:-55%}
+.cloud::after{width:55%;height:100%;right:4%;top:-35%}
+.c1{width:46vw;height:14vw;left:-12vw;bottom:8vh;background:#FFE9EF;animation:drift 22s ease-in-out infinite alternate}
+.c2{width:52vw;height:15vw;right:-16vw;bottom:2vh;background:#FBDCE4;animation:drift 26s ease-in-out infinite alternate-reverse}
+.c3{width:34vw;height:10vw;left:-6vw;top:12vh;background:#FFF5F8;opacity:.6;animation:drift 30s ease-in-out infinite alternate}
+.c4{width:30vw;height:9vw;right:-4vw;top:20vh;background:#FFEFF3;opacity:.55;animation:drift 24s ease-in-out infinite alternate-reverse}
+.c5{width:120vw;height:22vh;left:-10vw;bottom:-12vh;background:#FFF0F4;opacity:.95;filter:blur(26px)}
+@keyframes drift{to{transform:translateX(6vw)}}
+.door-logo{position:relative;z-index:2;text-align:center;color:var(--burdeos);margin-bottom:18px}
+.door-logo b{display:block;font:600 clamp(30px,5vw,46px)/1 var(--serif);letter-spacing:.24em;padding-left:.24em}
+.door-logo span{font-size:clamp(22px,3vw,30px);line-height:1;color:var(--vino)}
+.door-wrap{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center}
+.door{position:relative;width:clamp(150px,22vw,250px);aspect-ratio:5/8;border-radius:999px 999px 0 0;border:clamp(9px,1.2vw,14px) solid var(--burdeos);
+  background:radial-gradient(60% 50% at 50% 60%,#FFF4D9 0%,#F5C98A 45%,#C9A46A 100%);perspective:900px;overflow:hidden;
+  box-shadow:0 0 0 2px #5a1c2c inset,0 30px 60px -20px rgba(74,31,43,.55)}
+.leaf{position:absolute;top:0;bottom:0;width:50%;background:linear-gradient(180deg,#86304A,#6A2235);transition:transform 1.5s cubic-bezier(.7,0,.3,1)}
+.leaf::before{content:"";position:absolute;inset:16% 16% 10%;border:2px solid rgba(255,255,255,.14);border-radius:999px 999px 4px 4px}
+.leaf.l{left:0;transform-origin:left center;box-shadow:inset -1px 0 0 rgba(0,0,0,.35)}
+.leaf.r{right:0;transform-origin:right center}
+.leaf.l::after,.leaf.r::after{content:"";position:absolute;top:55%;width:6px;height:6px;border-radius:50%;background:var(--oro)}
+.leaf.l::after{right:10%}.leaf.r::after{left:10%}
+.steps{display:flex;flex-direction:column;align-items:center}
+.steps i{display:block;height:clamp(8px,1.1vw,12px);background:linear-gradient(180deg,#8A3550,#5E1F30);border-radius:2px}
+.steps i:nth-child(1){width:calc(clamp(150px,22vw,250px) + 30px)}
+.steps i:nth-child(2){width:calc(clamp(150px,22vw,250px) + 70px)}
+.steps i:nth-child(3){width:calc(clamp(150px,22vw,250px) + 110px)}
+.intro-cta{position:absolute;left:50%;bottom:calc(6vh + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:12px;color:var(--vino)}
+.intro-cta .btn{background:var(--burdeos);color:#fff;box-shadow:0 10px 30px -10px rgba(74,31,43,.6)}
+.intro-skip{position:absolute;right:16px;top:calc(14px + env(safe-area-inset-top,0px));z-index:3;background:none;border:0;color:var(--vino);font:500 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;cursor:pointer;padding:10px}
+.intro.opening .leaf.l{transform:rotateY(-105deg)}
+.intro.opening .leaf.r{transform:rotateY(105deg)}
+.intro.opening .scene{transform:scale(7);opacity:0}
+.intro.opening .intro-cta,.intro.opening .intro-skip{opacity:0;transition:opacity .4s}
+.intro.gone{opacity:0;visibility:hidden;transition:opacity .6s,visibility 0s .6s}
+
+/* =========================================================
+   2. NAVEGACIÓN
+   ========================================================= */
+.nav{position:fixed;inset:0 0 auto;z-index:60;transition:background .5s,backdrop-filter .5s}
+.nav.solid{background:rgba(42,17,24,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px;padding-top:env(safe-area-inset-top,0px)}
+.brand{display:flex;flex-direction:column;line-height:1;text-decoration:none;color:#fff}
+.brand b{font:600 19px/1 var(--serif);letter-spacing:.28em}
+.brand span{font:400 10px/1.4 var(--sans);letter-spacing:.34em;text-transform:uppercase;opacity:.85;margin-top:4px}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{color:#fff;text-decoration:none;font-size:13px;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.nav-links a:hover{opacity:1}
+.nav-links .dot{opacity:.5;color:#fff}
+.nav .btn{min-height:42px;padding:0 22px;font-size:12px}
+.burger{display:none;width:44px;height:44px;border:0;background:none;color:#fff;cursor:pointer;padding:0}
+.burger svg{width:26px;height:26px}
+@media (max-width:860px){.nav-links{display:none}.burger{display:inline-flex;align-items:center;justify-content:center}.nav .btn{display:none}}
+.menu{position:fixed;inset:0;z-index:70;background:var(--burdeos);color:#fff;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:32px 24px;opacity:0;visibility:hidden;transition:opacity .5s var(--ease),visibility 0s .5s}
+.menu.open{opacity:1;visibility:visible;transition:opacity .5s var(--ease)}
+.menu a{font:400 clamp(40px,11vw,60px)/1.15 var(--serif);text-decoration:none}
+.menu a i{color:var(--rosa)}
+.menu .btn{align-self:flex-start;margin-top:24px}
+.menu-close{position:absolute;right:16px;top:calc(14px + env(safe-area-inset-top,0px));width:44px;height:44px;border:0;background:none;color:#fff;font-size:30px;cursor:pointer}
+
+/* =========================================================
+   3. HERO 1
+   ========================================================= */
+.hero{position:relative;min-height:100svh;background:var(--burdeos);color:#fff;overflow:hidden;display:flex;align-items:center}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 30% 55%,rgba(255,180,200,.18),transparent 70%),radial-gradient(50% 60% at 90% 10%,rgba(42,17,24,.6),transparent 70%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,5vw,80px);align-items:center;padding-block:110px 60px;width:100%}
+.arch-photo{position:relative;border-radius:999px 999px 0 0;overflow:hidden;aspect-ratio:3/4;background:var(--vino)}
+.arch-photo img{width:100%;height:100%;object-fit:cover}
+.hero .arch-photo{max-width:440px;justify-self:center;width:100%;border:1px solid rgba(255,255,255,.25);outline:1px solid rgba(255,255,255,.18);outline-offset:10px}
+.hero .arch-photo img{object-position:50% 10%;transform:scale(1.12);animation:settle 2.4s var(--ease) .2s forwards}
+@keyframes settle{to{transform:scale(1)}}
+.hero-copy{display:flex;flex-direction:column;gap:24px}
+.hero-copy .caps{color:var(--rosa)}
+.hero h1{font-size:clamp(52px,8.4vw,128px);font-weight:400}
+.hero h1 i{color:var(--blush)}
+.hero .script{font-size:clamp(34px,4vw,54px);color:var(--oro);line-height:.6;margin-top:-6px;align-self:flex-end;transform:rotate(-6deg);margin-right:8%}
+.hero .lead{max-width:40ch;font-size:clamp(16px,1.4vw,19px);color:rgba(255,255,255,.86)}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.hero .btn-main{background:#74263A;color:#fff}
-.hero .btn-line{color:#141414;border-color:#141414}
-.hero-photo{position:relative;min-height:340px}
-.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:52% 18%}
-.sig{position:absolute;left:18px;bottom:16px;background:rgba(20,20,20,.72);color:#fff;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:8px 12px;border-radius:2px}
-@media (max-width:820px){.hero{grid-template-columns:1fr}.hero-photo{order:-1;min-height:340px;aspect-ratio:4/4}}
+.scroll-hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.7);font-size:11px;letter-spacing:.3em;text-transform:uppercase}
+.scroll-hint::after{content:"";width:1px;height:34px;background:linear-gradient(#fff,transparent);animation:hint 2s ease-in-out infinite}
+@keyframes hint{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media (max-width:820px){
+  .hero .wrap{grid-template-columns:1fr;padding-block:96px 80px;text-align:left}
+  .hero .arch-photo{max-width:300px;order:-1}
+  .hero .script{align-self:flex-start;margin-right:0;margin-left:40%}
+}
+/* letras */
+.split .w{display:inline-block;white-space:nowrap}
+.split .ch{display:inline-block;opacity:0;transform:translateY(.45em) rotate(4deg);filter:blur(6px);transition:opacity .9s var(--ease),transform .9s var(--ease),filter .9s var(--ease)}
+.split.in .ch{opacity:1;transform:none;filter:none}
 
-/* brow-arch divider */
-.arch{display:block;margin:0 auto;width:120px;height:28px}
-.arch path{fill:none;stroke:var(--rosa);stroke-width:1.5;stroke-linecap:round}
+/* =========================================================
+   4. HERO 2 · scroll fijado
+   ========================================================= */
+.firma{position:relative;height:260vh;background:var(--vino);color:#fff;--p:0}
+.firma .stage{position:sticky;top:0;height:100svh;overflow:hidden}
+.firma .stage::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 50% at 50% 45%,#74263A 0%,transparent 75%);opacity:calc(.4 + var(--p) * .6)}
+.portrait{position:absolute;left:50%;top:46%;width:clamp(190px,24vw,340px);aspect-ratio:3/4;border-radius:50%;overflow:hidden;transform:translate(-50%,-50%) scale(calc(1.25 - var(--p) * .25));box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.orb{position:absolute;width:clamp(110px,15vw,210px);aspect-ratio:3/4;overflow:hidden;box-shadow:0 30px 60px -25px rgba(0,0,0,.6);
+  transform:translate(calc(var(--sx) * (1 - var(--p))),calc(var(--sy) * (1 - var(--p)))) rotate(calc(var(--r) * (1 - var(--p)) + var(--r2)));opacity:calc(.2 + var(--p))}
+.orb img{width:100%;height:100%;object-fit:cover}
+.orb.oval{border-radius:50%}
+.orb.arch{border-radius:999px 999px 6px 6px}
+.o1{left:7%;top:10%;--sx:-70vw;--sy:-10vh;--r:-30deg;--r2:-6deg}
+.o2{right:7%;top:12%;--sx:70vw;--sy:-20vh;--r:30deg;--r2:5deg}
+.o3{left:14%;bottom:7%;--sx:-60vw;--sy:50vh;--r:20deg;--r2:4deg}
+.o4{right:13%;bottom:9%;--sx:60vw;--sy:50vh;--r:-25deg;--r2:-4deg}
+.firma-copy{position:absolute;left:50%;bottom:clamp(28px,7vh,72px);transform:translateX(-50%);width:min(92vw,820px);text-align:center;opacity:clamp(0,calc(var(--p) * 2.4 - 1),1)}
+.firma-copy h2{font-size:clamp(40px,6.6vw,96px);font-weight:400;text-shadow:0 6px 30px rgba(42,17,24,.6)}
+.firma-copy h2 i{color:var(--rosa)}
+.firma-copy p{margin-top:12px;color:rgba(255,255,255,.82);font-size:clamp(15px,1.3vw,18px)}
+@media (max-width:700px){
+  .portrait{top:40%;width:56vw}
+  .orb{width:31vw}
+  .o1{left:3%;top:11%}.o2{right:3%;top:16%}.o3{left:5%;bottom:24%}.o4{right:5%;bottom:21%}
+}
 
-section{padding-block:clamp(56px,8vw,96px)}
-.head{display:flex;flex-direction:column;gap:12px;margin-bottom:36px;max-width:640px}
-.head h2{font-size:clamp(34px,4.4vw,52px)}
-.head p{color:var(--muted);font-size:17px}
+/* =========================================================
+   FILM
+   ========================================================= */
+.film{background:var(--vino-2);color:#fff;padding-block:clamp(72px,10vw,130px)}
+.film .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,90px);align-items:center}
+.film h2{font-size:clamp(44px,6vw,86px);font-weight:400}
+.film h2 i{color:var(--rosa)}
+.film .caps{color:var(--oro)}
+.film-copy{display:flex;flex-direction:column;gap:20px}
+.film-copy p{color:rgba(255,255,255,.78);max-width:44ch;font-size:17px}
+.film-frame{position:relative;justify-self:center;width:min(100%,380px);aspect-ratio:9/16;border-radius:999px 999px 18px 18px;overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.2);outline:1px solid rgba(201,164,106,.4);outline-offset:12px}
+.film-frame video{width:100%;height:100%;object-fit:cover}
+.film-toggle{position:absolute;right:14px;bottom:14px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.88);color:var(--burdeos);cursor:pointer;display:grid;place-items:center}
+.film-toggle svg{width:16px;height:16px}
+@media (max-width:820px){.film .wrap{grid-template-columns:1fr}.film-frame{width:min(78vw,340px)}}
 
-/* services */
-.services{border-top:1px solid var(--line)}
-.cat{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:40px 0 4px}
-.cat:first-of-type{margin-top:0}
-.svc{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.6fr) 140px;gap:24px;align-items:baseline;padding-block:26px;border-bottom:1px solid var(--line)}
-.svc h3{font-size:28px}
-.svc h3 small{display:block;font:500 12px/1.6 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-top:6px}
-.svc p{color:var(--muted)}
-.svc .dur{text-align:right;font-size:14px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
-@media (max-width:720px){.svc{grid-template-columns:1fr;gap:8px}.svc .dur{text-align:left}}
-.price-note{margin-top:20px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:var(--muted)}
-.chip{background:var(--soft);color:var(--on-soft);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:500}
+/* =========================================================
+   5. SERVICIOS · tinta líquida
+   ========================================================= */
+.servicios{position:relative;background:var(--crema);padding-block:clamp(80px,11vw,150px);overflow:hidden;--p:0}
+.ink{position:absolute;pointer-events:none;fill:var(--burdeos)}
+.ink.i1{width:min(50vw,560px);right:-14vw;top:-12vw;transform:translateY(calc(var(--p) * 120px)) rotate(calc(var(--p) * 20deg))}
+.ink.i2{width:min(44vw,480px);left:-18vw;top:42%;opacity:.95;transform:translateY(calc(var(--p) * -160px)) rotate(calc(var(--p) * -25deg))}
+.ink.i3{width:min(40vw,420px);right:12%;bottom:-16vw;opacity:.9;transform:translateY(calc(var(--p) * -90px))}
+.ink path{animation:morph 14s ease-in-out infinite alternate}
+.ink.i2 path{animation-duration:18s}
+.servicios .wrap{position:relative}
+.sec-head{display:flex;flex-direction:column;gap:14px;margin-bottom:clamp(40px,6vw,72px);max-width:720px}
+.sec-head .caps{color:var(--burdeos)}
+.sec-head h2{font-size:clamp(44px,6vw,88px);font-weight:400;color:var(--vino-2)}
+.sec-head h2 i{color:var(--burdeos)}
+.sec-head p{color:var(--muted);font-size:17px;max-width:52ch}
+.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,3.5vw,48px) clamp(18px,3vw,40px)}
+.svc-card{display:flex;flex-direction:column;gap:14px;background:rgba(250,245,240,.92);padding:14px 14px 22px;border-radius:999px 999px 14px 14px}
+.svc-card:nth-child(3n+2){margin-top:clamp(0px,6vw,80px)}
+.svc-card .shape{position:relative;overflow:hidden;aspect-ratio:4/5;clip-path:inset(100% 0 0 0 round 999px 999px 0 0);transition:clip-path 1.3s var(--ease)}
+.svc-card.oval .shape{border-radius:50%;clip-path:inset(100% 0 0 0 round 50%)}
+.svc-card .shape img{width:100%;height:100%;object-fit:cover;transform:scale(1.25);transition:transform 1.8s var(--ease)}
+.svc-card.in .shape{clip-path:inset(0 0 0 0 round 999px 999px 0 0)}
+.svc-card.oval.in .shape{clip-path:inset(0 0 0 0 round 50%)}
+.svc-card.in .shape img{transform:scale(1)}
+.svc-card:hover .shape img{transform:scale(1.05)}
+.svc-card h3{font-size:clamp(26px,2.4vw,34px);color:var(--vino-2);padding-inline:8px}
+.svc-card h3 i{color:var(--burdeos)}
+.svc-card .caps{font-size:11px;color:var(--burdeos);padding-inline:8px}
+.svc-card p{color:var(--muted);font-size:15px;padding-inline:8px}
+.svc-card .price{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:1px solid var(--line);padding:12px 8px 0;margin-top:auto}
+.svc-card .price b{font:500 22px/1 var(--serif);color:var(--burdeos);font-variant-numeric:lining-nums}
+.svc-card .price button{background:none;border:0;color:var(--vino-2);font:500 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;cursor:pointer;padding:8px 0;text-decoration:underline;text-underline-offset:5px}
+@media (max-width:900px){.svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.svc-card:nth-child(3n+2){margin-top:0}.svc-card:nth-child(2n){margin-top:48px}}
+@media (max-width:560px){.svc-grid{grid-template-columns:1fr}.svc-card:nth-child(2n){margin-top:0}.svc-card{max-width:420px;margin-inline:auto;width:100%}}
 
-/* results */
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
-.f{font:500 14px/1 var(--sans);letter-spacing:.03em;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
-.f[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.results .ph{position:relative}
-.tag{position:absolute;left:10px;font:500 11px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;background:rgba(20,20,20,.72);color:#fff;padding:6px 9px;border-radius:2px}
-.tag.t1{top:10px}.tag.t2{top:calc(50% + 10px)}
+/* =========================================================
+   6. PRECIOS
+   ========================================================= */
+.precios{background:var(--blush);padding-block:clamp(80px,10vw,140px)}
+.precios .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,96px);align-items:start}
+.precios .sec-head{position:sticky;top:110px;margin-bottom:0}
+.menu-list{display:flex;flex-direction:column}
+.menu-cat{font:600 12px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--burdeos);margin:44px 0 6px}
+.menu-cat:first-child{margin-top:0}
+.row{display:flex;align-items:baseline;gap:14px;padding-block:18px;border-bottom:1px solid var(--line)}
+.row .n{font:400 clamp(21px,2vw,27px)/1.2 var(--serif);color:var(--vino-2)}
+.row .n small{display:block;font:400 14px/1.5 var(--sans);color:var(--muted);margin-top:4px}
+.row .lead-dots{flex:1;border-bottom:1px dotted rgba(116,38,58,.35);transform:translateY(-6px);min-width:20px}
+.row .v{font:500 clamp(20px,1.8vw,24px)/1 var(--serif);color:var(--burdeos);white-space:nowrap;font-variant-numeric:lining-nums}
+.row .v.t{font:500 13px/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;text-align:right;white-space:normal;max-width:12ch}
+.price-note{margin-top:26px;color:var(--muted);font-size:15px}
+@media (max-width:860px){.precios .wrap{grid-template-columns:1fr}.precios .sec-head{position:static}}
 
-.alt{background:var(--bg-alt)}
-.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.results figure{margin:0;display:flex;flex-direction:column;gap:10px}
-.results img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;display:block}
+/* =========================================================
+   RESULTADOS
+   ========================================================= */
+.resultados{background:var(--crema);padding-block:clamp(80px,10vw,140px)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.f{font:500 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;min-height:42px;padding:0 18px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--vino-2);cursor:pointer;transition:background .3s,color .3s}
+.f[aria-pressed="true"]{background:var(--burdeos);color:#fff;border-color:var(--burdeos)}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.results figure{margin:0;display:flex;flex-direction:column;gap:12px}
+.results .ph{position:relative;overflow:hidden;border-radius:14px}
+.results img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1.2s var(--ease)}
+.results figure:hover img{transform:scale(1.04)}
 .results figcaption{font-size:14px;color:var(--muted)}
-.results figcaption b{color:var(--ink);font-weight:500}
-@media (max-width:760px){.results{grid-template-columns:1fr}}
-
-/* why */
-.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:48px}
-.why div{display:flex;flex-direction:column;gap:8px;padding-top:18px;border-top:1px solid var(--ink)}
-.why h3{font-size:22px}
+.results figcaption b{color:var(--vino-2);font-weight:500;font-family:var(--serif);font-size:18px}
+.tag{position:absolute;left:12px;font:500 10px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;background:rgba(42,17,24,.72);color:#fff;padding:7px 10px;border-radius:999px}
+.tag.t1{top:12px}.tag.t2{top:calc(50% + 12px)}
+@media (max-width:860px){.results{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.results{grid-template-columns:1fr}}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:72px}
+.why div{display:flex;flex-direction:column;gap:8px;padding-top:20px;border-top:1px solid var(--burdeos)}
+.why h3{font-size:24px;color:var(--vino-2)}
 .why p{color:var(--muted);font-size:15px}
 @media (max-width:760px){.why{grid-template-columns:1fr;gap:24px}}
 
+/* =========================================================
+   SOBRE MAURY
+   ========================================================= */
+.about{background:var(--vino);color:#fff;padding-block:clamp(80px,10vw,140px)}
+.about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,6vw,96px);align-items:center}
+.about .arch-photo{max-width:420px;width:100%;justify-self:center}
+.about .arch-photo img{object-position:50% 12%}
+.about-copy{display:flex;flex-direction:column;gap:18px;max-width:54ch}
+.about-copy .caps{color:var(--oro)}
+.about-copy h2{font-size:clamp(48px,6.4vw,92px);font-weight:400}
+.about-copy h2 i{color:var(--rosa)}
+.about-copy p{color:rgba(255,255,255,.8);font-size:17px}
+.about-copy .script{font-size:46px;color:var(--oro);line-height:1}
+.about-copy .btn{align-self:flex-start;margin-top:6px}
+@media (max-width:820px){.about .wrap{grid-template-columns:1fr}.about .arch-photo{max-width:320px}}
 
-/* about */
-.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,72px);align-items:center}
-.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;border-radius:4px;display:block;background:var(--perla)}
-.about-copy{display:flex;flex-direction:column;gap:16px;max-width:52ch}
-.about-copy h2{font-size:clamp(40px,5vw,64px)}
-.about-copy p{color:var(--muted);font-size:17px}
-.about-copy .btn{align-self:flex-start;margin-top:8px}
-@media (max-width:820px){.about{grid-template-columns:1fr}.about-photo{max-width:420px}}
-
-/* testimonials */
-.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.ig{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
-.ig .head{margin-bottom:0}
-.quote{margin:0;background:var(--bg);border:1px dashed var(--line);padding:28px;display:flex;flex-direction:column;gap:18px;border-radius:4px}
-.quote blockquote{margin:0;font-family:var(--serif);font-style:italic;font-size:21px;line-height:1.35}
-.quote .who{font-size:14px;color:var(--muted)}
-.quote .who b{color:var(--ink);font-weight:500}
-@media (max-width:860px){.quotes{grid-template-columns:1fr}}
-
-/* contact */
-.contact{background:var(--deep);color:var(--on-deep)}
-.contact .caps{color:#C9C4C0}
-.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,64px);align-items:start}
-.contact h2{font-size:clamp(36px,4.6vw,56px)}
-.contact h2 i{color:var(--rosa)}
-.contact-info{display:flex;flex-direction:column;gap:18px}
-.contact-info p{color:#D9D5D1;max-width:40ch}
-.facts{display:flex;flex-direction:column;gap:10px;font-size:15px;color:#D9D5D1}
-.facts b{color:#fff;font-weight:500}
-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.field{display:flex;flex-direction:column;gap:6px}
-.field.full{grid-column:1/-1}
-label{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#C9C4C0}
-input,select,textarea{font:400 16px/1.4 var(--sans);color:#141414;background:#fff;border:1px solid #fff;border-radius:4px;padding:13px 14px;width:100%}
-textarea{min-height:110px;resize:vertical}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--rosa);outline-offset:1px}
-.contact .btn-main{background:var(--rosa);color:#141414}
-.form-foot{grid-column:1/-1;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
-.form-foot small{color:#C9C4C0;font-size:13px}
-.done{grid-column:1/-1;background:#fff;color:#141414;border-radius:4px;padding:18px;display:flex;flex-direction:column;gap:12px}
-.done a.btn{align-self:flex-start}
-.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.err{color:#F3DCE2;font-size:14px;grid-column:1/-1}
-@media (max-width:820px){.contact-grid{grid-template-columns:1fr} form{grid-template-columns:1fr}}
-
-
-/* faq */
-.faq{border-top:1px solid var(--line);max-width:820px}
+/* =========================================================
+   PREGUNTAS
+   ========================================================= */
+.faq-sec{background:var(--crema);padding-block:clamp(80px,10vw,140px)}
+.faq{border-top:1px solid var(--line);max-width:860px}
 .faq details{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:20px;font-family:var(--serif);font-size:22px;line-height:1.25}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px;font:400 clamp(21px,2vw,26px)/1.25 var(--serif);color:var(--vino-2)}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--sans);font-size:26px;font-weight:300;color:var(--accent);flex-shrink:0;transition:transform .2s ease}
+.faq summary::after{content:"+";font:300 28px/1 var(--sans);color:var(--burdeos);flex-shrink:0;transition:transform .4s var(--ease)}
 .faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{padding-bottom:22px;color:var(--muted);max-width:62ch}
-@media (prefers-reduced-motion: reduce){.faq summary::after{transition:none}}
+.faq details p{padding-bottom:24px;color:var(--muted);max-width:64ch}
 
-/* floating whatsapp */
-.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom, 0px));z-index:10;display:inline-flex;align-items:center;gap:8px;min-height:52px;padding:0 20px;border-radius:999px;background:#74263A;color:#fff;text-decoration:none;font:500 15px/1 var(--sans);box-shadow:0 6px 20px rgba(20,20,20,.25)}
+/* =========================================================
+   7. CIERRE
+   ========================================================= */
+.cierre{position:relative;background:var(--burdeos);color:#fff;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:120px 16px 34vh;--p:0}
+.cierre::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 50% 35%,rgba(255,190,205,.16),transparent 70%)}
+.big-word{position:relative;font:400 clamp(110px,26vw,360px)/.82 var(--serif);letter-spacing:-.04em}
+.big-word .gold{color:var(--oro)}
+.cierre .script{position:relative;font-size:clamp(38px,6vw,78px);color:var(--blush);margin-top:-.15em;line-height:1}
+.cierre p.sub{position:relative;margin-top:18px;color:rgba(255,255,255,.8);max-width:40ch}
+.cierre .btn{position:relative;margin-top:30px;z-index:2}
+.btn-wiggle:hover{animation:wiggle .6s ease-in-out}
+@keyframes wiggle{0%,100%{transform:rotate(0)}20%{transform:rotate(-3deg)}40%{transform:rotate(3deg)}60%{transform:rotate(-2deg)}80%{transform:rotate(1deg)}}
+.rise{position:absolute;bottom:0;width:clamp(120px,17vw,230px);aspect-ratio:3/4;overflow:hidden;border-radius:999px 999px 0 0;box-shadow:0 -20px 60px -20px rgba(0,0,0,.5);transform:translateY(calc((1 - var(--p)) * 70% + 22%))}
+.rise img{width:100%;height:100%;object-fit:cover}
+.rise.r1{left:6%}
+.rise.r2{left:50%;margin-left:calc(clamp(120px,17vw,230px) / -2);width:clamp(120px,17vw,230px);border-radius:50% 50% 0 0;transform:translateY(calc((1 - var(--p)) * 90% + 34%))}
+.rise.r3{right:6%}
+@media (max-width:640px){.rise{width:34vw}.rise.r2{display:none}.rise.r1{left:-4%}.rise.r3{right:-4%}}
+
+/* =========================================================
+   9. PIE
+   ========================================================= */
+.foot{background:var(--vino-2);color:rgba(255,255,255,.78);padding-block:64px calc(110px + env(safe-area-inset-bottom,0px))}
+.foot .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:36px}
+.foot .brand{color:#fff}
+.foot .brand b{font-size:26px}
+.foot h4{margin:0 0 12px;font:600 11px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--oro)}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.foot a{text-decoration:none}
+.foot a:hover{color:#fff}
+.foot .tiny{grid-column:1/-1;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:13px}
+.replay{background:none;border:0;color:inherit;font:inherit;cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:760px){.foot .wrap{grid-template-columns:1fr}}
+
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:50;display:inline-flex;align-items:center;gap:8px;min-height:52px;padding:0 20px;border-radius:999px;background:#fff;color:var(--burdeos);text-decoration:none;font:500 13px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;box-shadow:0 10px 30px -8px rgba(42,17,24,.45)}
 .fab svg{width:20px;height:20px}
 
-footer{padding-block:36px 96px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
-footer .logo{font-size:20px;color:var(--ink)}
+/* =========================================================
+   8. RESERVA · ventana crema
+   ========================================================= */
+.booking{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;margin:0}
+.booking::backdrop{background:rgba(42,17,24,.62);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.booking[open]{display:flex;align-items:center;justify-content:center;padding:16px}
+.bk{position:relative;width:min(100%,900px);max-height:calc(100svh - 32px);overflow:auto;background:var(--crema);color:var(--ink);border-radius:22px;padding:clamp(22px,4vw,44px);box-shadow:0 40px 100px -30px rgba(0,0,0,.6);animation:pop .7s var(--ease)}
+@keyframes pop{from{opacity:0;transform:translateY(30px) scale(.97)}}
+.bk-close{position:absolute;right:12px;top:12px;width:44px;height:44px;border-radius:50%;border:0;background:transparent;color:var(--vino-2);font-size:28px;line-height:1;cursor:pointer}
+.bk h2{font-size:clamp(34px,4.6vw,54px);font-weight:400;color:var(--vino-2);padding-right:40px}
+.bk h2 .script{color:var(--burdeos);font-size:1.05em}
+.bk .caps{color:var(--burdeos);display:block;margin:8px 0 26px}
+.bk-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,44px)}
+.cal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.cal-head strong{font:500 22px/1 var(--serif);color:var(--vino-2);text-transform:capitalize}
+.cal-nav{display:flex;gap:6px}
+.cal-nav button{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--burdeos);cursor:pointer;font-size:18px}
+.cal-nav button:disabled{opacity:.3;cursor:default}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
+.cal .wd{font:600 11px/1 var(--sans);letter-spacing:.14em;color:var(--muted);padding:8px 0}
+.cal button{aspect-ratio:1;border:0;border-radius:50%;background:transparent;color:var(--vino-2);font:500 15px/1 var(--sans);cursor:pointer;min-height:36px;font-variant-numeric:tabular-nums}
+.cal button:hover:not(:disabled){background:var(--blush)}
+.cal button:disabled{color:rgba(42,17,24,.25);cursor:default}
+.cal button[aria-pressed="true"]{background:var(--burdeos);color:#fff}
+.cal button.today{box-shadow:inset 0 0 0 1px var(--burdeos)}
+.bk-side{display:flex;flex-direction:column;gap:18px}
+.bk label,.bk .lbl{display:block;font:600 11px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.slots{display:flex;flex-wrap:wrap;gap:8px}
+.slots button{min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--vino-2);font:500 14px/1 var(--sans);cursor:pointer}
+.slots button[aria-pressed="true"]{background:var(--burdeos);color:#fff;border-color:var(--burdeos)}
+.slots .hint{font-size:14px;color:var(--muted)}
+.bk input,.bk select,.bk textarea{width:100%;font:400 16px/1.4 var(--sans);color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 14px}
+.bk textarea{min-height:76px;resize:vertical}
+.bk input:focus,.bk select:focus,.bk textarea:focus{outline:2px solid var(--burdeos);outline-offset:1px}
+.bk .err{color:#A0213F;font-size:14px}
+.bk-foot{grid-column:1/-1;display:flex;flex-direction:column;gap:10px}
+.bk-foot .btn{width:100%;min-height:56px}
+.bk-foot small{color:var(--muted);font-size:13px;text-align:center}
+.bk-done{grid-column:1/-1;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.bk-done a{align-self:flex-start}
+@media (max-width:760px){.bk-grid{grid-template-columns:1fr}.booking[open]{padding:0;align-items:flex-end}.bk{border-radius:22px 22px 0 0;max-height:94svh}}
+
+/* ---------- movimiento reducido ---------- */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  [data-reveal],.split .ch{opacity:1!important;transform:none!important;filter:none!important}
+  .svc-card .shape{clip-path:none!important}.svc-card .shape img{transform:none!important}
+  .firma{height:auto}.firma .stage{position:relative;height:100svh}
+  .firma,.servicios,.cierre{--p:1!important}
+  .hero .arch-photo img{transform:none}
+  .cursor{display:none}
+}
 </style>
 </head>
 <body>
 
-
-<div class="wrap">
-  <header class="top">
-    <a class="logo" href="#inicio">MAU <em>Studio</em></a>
-    <nav aria-label="Secciones">
-      <a href="#servicios">Servicios</a>
-      <a href="#resultados">Resultados</a>
-      <a href="#maury">Sobre mí</a>
-      <a href="#preguntas">Preguntas</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
-
-  <main id="inicio">
-    <div class="hero">
-      <div class="hero-copy">
-        <span class="caps">Artista de cejas &amp; labios · Punto Fijo</span>
-        <h1>Realzo lo que <i>ya es tuyo.</i></h1>
-        <div class="rule" aria-hidden="true"></div>
-        <p class="lead">Cejas y labios diseñados según tu rostro, con resultados naturales que resisten el calor de Paraguaná. Te acompaño desde la evaluación hasta tu retoque.</p>
-        <div class="hero-actions">
-          <a class="btn btn-main" href="#contacto">Agenda tu evaluación</a>
-          <a class="btn btn-line" href="#resultados">Ver resultados</a>
-        </div>
-      </div>
-      <div class="hero-photo">
-        <img src="hero.jpg" alt="Maurymar Barbera, artista de cejas y labios de MAU Studio">
-        <span class="sig">Maury · by Maury</span>
-      </div>
+<!-- ================= 1. INTRO · puerta entre nubes =================
+     Hecha en CSS (sin imagen). Si luego tienes un video de la puerta abriéndose
+     (Higgsfield/Kling), puedes poner un <video> dentro de .scene. -->
+<div class="intro" id="intro" role="dialog" aria-label="Bienvenida a MAU Studio" hidden>
+  <button class="intro-skip" type="button" id="intro-skip">Saltar</button>
+  <div class="scene">
+    <div class="cloud c3"></div><div class="cloud c4"></div>
+    <div class="door-logo"><b>MAU</b><span class="script">studio</span></div>
+    <div class="door-wrap">
+      <div class="door" aria-hidden="true"><div class="leaf l"></div><div class="leaf r"></div></div>
+      <div class="steps" aria-hidden="true"><i></i><i></i><i></i></div>
     </div>
-  </main>
+    <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c5"></div>
+  </div>
+  <div class="intro-cta">
+    <button class="btn" type="button" id="intro-enter">Entrar</button>
+    <span class="caps" style="font-size:11px">Toca la puerta</span>
+  </div>
 </div>
 
-<section id="servicios">
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- ================= 2. NAVEGACIÓN ================= -->
+<header class="nav" id="nav">
   <div class="wrap">
-    <div class="head">
-      <span class="caps">Servicios</span>
-      <h2>Cada trazo empieza midiendo tu rostro</h2>
-      <p>Micropigmentación, cejas y pestañas, láser y cuidado de piel en un solo lugar. Antes de tocar un pigmento diseñamos juntas la forma y el tono.</p>
+    <a class="brand" href="#inicio" aria-label="MAU Studio, inicio"><b>MAU</b><span>studio · pmu</span></a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="#film">Film</a><span class="dot">·</span>
+      <a href="#servicios">Servicios</a><span class="dot">·</span>
+      <a href="#precios">Precios</a><span class="dot">·</span>
+      <a href="#resultados">Resultados</a>
+    </nav>
+    <button class="btn btn-white" type="button" data-book>Reservar</button>
+    <button class="burger" type="button" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+    </button>
+  </div>
+</header>
+<div class="menu" id="menu" aria-label="Menú">
+  <button class="menu-close" type="button" id="menu-close" aria-label="Cerrar menú">×</button>
+  <a href="#film">Film</a>
+  <a href="#servicios">Servicios <i>firma</i></a>
+  <a href="#precios">Precios</a>
+  <a href="#resultados">Resultados</a>
+  <a href="#maury">Sobre <i>Maury</i></a>
+  <a href="#preguntas">Preguntas</a>
+  <button class="btn btn-white" type="button" data-book>Reservar cita</button>
+</div>
+
+<main>
+<!-- ================= 3. HERO 1 ================= -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="arch-photo">
+      <!-- FOTO HERO: retrato de Maury. Reemplaza fotos/maury.jpg si tienes otra sesión -->
+      <img src="fotos/maury.jpg" alt="Maurymar Barbera, artista de cejas y labios de MAU Studio" fetchpriority="high">
     </div>
-        <h3 class="cat">Micropigmentación</h3>
-    <div class="services">
-      <div class="svc">
-        <h3>Cejas efecto Rouse<small>Técnica Rouse</small></h3>
-        <p>Técnica creada por Rosmary Barrios: pixel fino y un degradé de color impecable. Cejas naturales, sin efecto de tatuaje.</p>
-        <span class="dur">$180</span>
-      </div>
-      <div class="svc">
-        <h3>Juicy Lips<small>Micropigmentación de labios</small></h3>
-        <p>Color jugoso y contorno definido para labios que se ven sanos todo el día, aun después de la playa.</p>
-        <span class="dur">$200</span>
-      </div>
-      <div class="svc">
-        <h3>Correcciones<small>Segunda oportunidad</small></h3>
-        <p>¿Tus cejas se pusieron grises, azules o quedaron disparejas? Evaluamos tu caso y te digo con honestidad qué se puede lograr.</p>
-        <span class="dur">Precio en evaluación</span>
-      </div>
-    </div>
-    <h3 class="cat">Cejas y pestañas</h3>
-    <div class="services">
-      <div class="svc">
-        <h3>Depilación y diseño de cejas<small>Diseño según tu rostro</small></h3>
-        <p>Medimos tu rostro y damos forma a tus cejas para que enmarquen tu mirada.</p>
-        <span class="dur">$15</span>
-      </div>
-      <div class="svc">
-        <h3>Cejas semipermanentes<small>Henna</small></h3>
-        <p>Color y relleno que duran de 6 a 7 días aproximadamente. Ideal para probar una forma antes de micropigmentar.</p>
-        <span class="dur">$20</span>
-      </div>
-      <div class="svc">
-        <h3>Laminado de cejas<small>Cejas peinadas y llenas</small></h3>
-        <p>Ordena y fija el vello para que tus cejas se vean más llenas y definidas.</p>
-        <span class="dur">$30</span>
-      </div>
-      <div class="svc">
-        <h3>Lifting de pestañas<small>Tus pestañas, con curva</small></h3>
-        <p>Curva tus pestañas naturales desde la raíz, sin extensiones.</p>
-        <span class="dur">$30</span>
+    <div class="hero-copy">
+      <span class="caps">Micropigmentación natural · Punto Fijo</span>
+      <h1 class="split" aria-label="Cada rostro, una firma.">Cada rostro, <i>una firma.</i></h1>
+      <span class="script" aria-hidden="true">by Maury</span>
+      <p class="lead" data-reveal>Cejas efecto Rouse, Juicy Lips y cuidado de piel. Diseñados según tu rostro, para que se vean tuyos aun con el calor de Paraguaná.</p>
+      <div class="hero-actions" data-reveal>
+        <button class="btn btn-white" type="button" data-book>Reservar cita</button>
+        <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
       </div>
     </div>
-    <h3 class="cat">Láser</h3>
-    <div class="services">
-      <div class="svc">
-        <h3>Depilación láser<small>Por sesiones</small></h3>
-        <p>Reduce el vello de forma progresiva, sesión tras sesión. El precio lo define nuestro técnico láser según la zona.</p>
-        <span class="dur">Según zona</span>
-      </div>
-      <div class="svc">
-        <h3>Remoción láser<small>Tatuajes y micropigmentación</small></h3>
-        <p>Aclara o elimina tatuajes y micropigmentación mal hecha. También prepara la piel para una corrección. El precio por sesión lo define nuestro técnico láser.</p>
-        <span class="dur">Por sesión</span>
-      </div>
-    </div>
-    <h3 class="cat">Piel</h3>
-    <div class="services">
-      <div class="svc">
-        <h3>Limpieza facial<small>Limpieza profunda</small></h3>
-        <p>Tres opciones de limpieza: $50, $60 y $80. Piel limpia y cuidada, el mejor lienzo para tu micropigmentación.</p>
-        <span class="dur">Desde $50</span>
-      </div>
-    </div>
-    <div class="price-note">
-      <span class="chip">Servicios desde $15</span>
-      <span>Precios en dólares. Las correcciones y el láser se cotizan en tu evaluación.</span>
+  </div>
+  <span class="scroll-hint" aria-hidden="true">Desliza</span>
+</section>
+
+<!-- ================= 4. HERO 2 · scroll fijado ================= -->
+<section class="firma" id="firma" data-progress="sticky" aria-label="Tu rostro, mi firma">
+  <div class="stage">
+    <div class="portrait"><img src="hero.jpg" alt="Maury, fundadora de MAU Studio" loading="lazy"></div>
+    <div class="orb oval o1"><img src="cejas.jpg" alt="" loading="lazy"></div>
+    <div class="orb arch o2"><img src="labios.jpg" alt="" loading="lazy"></div>
+    <div class="orb arch o3"><img src="fotos/lifting.jpg" alt="" loading="lazy"></div>
+    <div class="orb oval o4"><img src="fotos/cejas-definidas.jpg" alt="" loading="lazy"></div>
+    <div class="firma-copy">
+      <h2>Tu rostro. <i>Mi firma.</i></h2>
+      <p>Natural, como si nacieras así.</p>
     </div>
   </div>
 </section>
 
-<section id="resultados" class="alt">
+<!-- ================= FILM ================= -->
+<section class="film" id="film">
   <div class="wrap">
-    <div class="head">
+    <div class="film-copy" data-reveal>
+      <span class="caps">Film · el proceso</span>
+      <h2>Del diseño <i>al después.</i></h2>
+      <p>Así trabajo cada cita: medimos tu rostro, diseñamos juntas la forma y el tono, y solo entonces pigmentamos. Formada en Rosmary Barrios Academy.</p>
+      <div><button class="btn btn-white" type="button" data-book>Quiero mi evaluación</button></div>
+    </div>
+    <div class="film-frame" data-reveal>
+      <!-- VIDEO: film/proceso.mp4 (versión liviana de tu video del proceso) -->
+      <video id="film-video" src="film/proceso.mp4" poster="film/proceso-poster.jpg" muted loop playsinline preload="none" aria-label="Video del proceso de micropigmentación de cejas en MAU Studio"></video>
+      <button class="film-toggle" type="button" id="film-toggle" aria-label="Pausar video"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><rect x="3" y="2" width="3.5" height="12"/><rect x="9.5" y="2" width="3.5" height="12"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. SERVICIOS ================= -->
+<section class="servicios" id="servicios" data-progress="pass">
+  <svg class="ink i1" viewBox="0 0 200 200" aria-hidden="true"><path d="M44.7,-58.6C57.3,-50.6,66.3,-36.6,71.1,-20.9C75.9,-5.2,76.5,12.2,69.8,26.1C63.1,40,49.1,50.4,34.2,58.9C19.3,67.4,3.5,74,-14.2,75.3C-31.9,76.6,-51.5,72.6,-61.6,60.4C-71.7,48.2,-72.3,27.8,-71.6,9.8C-70.9,-8.2,-68.9,-23.8,-60.9,-35.8C-52.9,-47.8,-38.9,-56.2,-25.1,-63.5C-11.3,-70.8,2.3,-77,15.6,-75.3C28.9,-73.6,32.1,-66.6,44.7,-58.6Z" transform="translate(100 100)"/></svg>
+  <svg class="ink i2" viewBox="0 0 200 200" aria-hidden="true"><path d="M38.1,-49.8C50.6,-42.5,62.4,-32.3,67.6,-19C72.8,-5.7,71.3,10.7,64.2,23.6C57.1,36.5,44.4,45.9,30.8,54.4C17.2,62.9,2.7,70.5,-13.6,71.9C-29.9,73.3,-48,68.5,-58.6,56.8C-69.2,45.1,-72.3,26.5,-71.1,9.2C-69.9,-8.1,-64.4,-24.1,-54.3,-32.9C-44.2,-41.7,-29.5,-43.3,-16.6,-50.4C-3.7,-57.5,7.4,-70.1,18.6,-70.2C29.8,-70.3,25.6,-57.1,38.1,-49.8Z" transform="translate(100 100)"/></svg>
+  <svg class="ink i3" viewBox="0 0 200 200" aria-hidden="true"><path d="M47.3,-57.7C59.6,-46.4,66.3,-29.5,68.8,-12.4C71.3,4.7,69.6,22,60.9,35.4C52.2,48.8,36.5,58.3,19.5,64.5C2.5,70.7,-15.8,73.6,-31.7,67.6C-47.6,61.6,-61.1,46.7,-67.6,29.5C-74.1,12.3,-73.6,-7.2,-66.4,-23.4C-59.2,-39.6,-45.3,-52.5,-30.4,-63C-15.5,-73.5,0.4,-81.6,15.4,-79.4C30.4,-77.2,35,-69,47.3,-57.7Z" transform="translate(100 100)"/></svg>
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="caps">Servicios</span>
+      <h2>Servicios <i>firma</i></h2>
+      <p>Micropigmentación, cejas y pestañas, láser y cuidado de piel en un solo lugar. Antes de tocar un pigmento diseñamos juntas la forma y el tono.</p>
+    </div>
+    <div class="svc-grid">
+      <!-- FOTOS DE SERVICIOS: cambia los src por tus mejores fotos -->
+      <article class="svc-card">
+        <div class="shape"><img src="cejas.jpg" alt="Antes y después de cejas con técnica Rouse" loading="lazy"></div>
+        <span class="caps">Micropigmentación · Técnica Rouse</span>
+        <h3>Cejas <i>efecto Rouse</i></h3>
+        <p>Técnica creada por Rosmary Barrios: pixel fino y un degradé de color impecable. Cejas naturales, sin efecto de tatuaje.</p>
+        <div class="price"><b>$180</b><button type="button" data-book="Cejas efecto Rouse">Reservar</button></div>
+      </article>
+      <article class="svc-card oval">
+        <div class="shape"><img src="labios.jpg" alt="Antes y después de labios Juicy Lips" loading="lazy"></div>
+        <span class="caps">Micropigmentación de labios</span>
+        <h3><i>Juicy</i> Lips</h3>
+        <p>Color jugoso y contorno definido para labios que se ven sanos todo el día, aun después de la playa.</p>
+        <div class="price"><b>$200</b><button type="button" data-book="Juicy Lips">Reservar</button></div>
+      </article>
+      <article class="svc-card">
+        <div class="shape"><img src="fotos/cejas-definidas.jpg" alt="Cejas laminadas y peinadas" loading="lazy"></div>
+        <span class="caps">Cejas</span>
+        <h3>Laminado <i>de cejas</i></h3>
+        <p>Ordena y fija el vello para que tus cejas se vean más llenas y definidas.</p>
+        <div class="price"><b>$30</b><button type="button" data-book="Laminado de cejas">Reservar</button></div>
+      </article>
+      <article class="svc-card oval">
+        <div class="shape"><img src="fotos/lifting.jpg" alt="Antes y después de lifting de pestañas" loading="lazy"></div>
+        <span class="caps">Pestañas</span>
+        <h3>Lifting <i>de pestañas</i></h3>
+        <p>Curva tus pestañas naturales desde la raíz, sin extensiones.</p>
+        <div class="price"><b>$30</b><button type="button" data-book="Lifting de pestañas">Reservar</button></div>
+      </article>
+      <article class="svc-card">
+        <div class="shape"><img src="fotos/limpieza-dermapen.jpg" alt="Antes y después de limpieza facial con dermapen" loading="lazy"></div>
+        <span class="caps">Piel</span>
+        <h3>Limpieza <i>facial</i></h3>
+        <p>Tres opciones de limpieza profunda. Piel limpia y cuidada, el mejor lienzo para tu micropigmentación.</p>
+        <div class="price"><b>Desde $50</b><button type="button" data-book="Limpieza facial">Reservar</button></div>
+      </article>
+      <article class="svc-card oval">
+        <div class="shape"><img src="fotos/laser.jpg" alt="Tratamiento láser con protección ocular" loading="lazy"></div>
+        <span class="caps">Láser</span>
+        <h3>Depilación <i>y remoción</i></h3>
+        <p>Depilación láser por sesiones y remoción de tatuajes o micropigmentación. Lo cotiza nuestro técnico láser.</p>
+        <div class="price"><b>Según zona</b><button type="button" data-book="Depilación láser">Reservar</button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. PRECIOS ================= -->
+<section class="precios" id="precios">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="caps">Precios</span>
+      <h2>La <i>carta</i></h2>
+      <p>Precios en dólares. Tu cita queda apartada con un abono. Aceptamos Pago Móvil, Zelle, Binance y efectivo.</p>
+      <div><button class="btn btn-burdeos btn-wiggle" type="button" data-book>Reservar cita</button></div>
+    </div>
+    <!-- PRECIOS: edita aquí -->
+    <div class="menu-list">
+      <div class="menu-cat" data-reveal>Micropigmentación</div>
+      <div class="row" data-reveal><span class="n">Cejas efecto Rouse<small>Incluye retoque a las 4–8 semanas</small></span><span class="lead-dots"></span><span class="v">$180</span></div>
+      <div class="row" data-reveal><span class="n">Juicy Lips</span><span class="lead-dots"></span><span class="v">$200</span></div>
+      <div class="row" data-reveal><span class="n">Correcciones<small>Cejas grises, azules o disparejas</small></span><span class="lead-dots"></span><span class="v t">En evaluación</span></div>
+      <div class="menu-cat" data-reveal>Cejas y pestañas</div>
+      <div class="row" data-reveal><span class="n">Depilación y diseño de cejas</span><span class="lead-dots"></span><span class="v">$15</span></div>
+      <div class="row" data-reveal><span class="n">Cejas semipermanentes<small>Henna, dura de 6 a 7 días</small></span><span class="lead-dots"></span><span class="v">$20</span></div>
+      <div class="row" data-reveal><span class="n">Laminado de cejas</span><span class="lead-dots"></span><span class="v">$30</span></div>
+      <div class="row" data-reveal><span class="n">Lifting de pestañas</span><span class="lead-dots"></span><span class="v">$30</span></div>
+      <div class="menu-cat" data-reveal>Piel</div>
+      <div class="row" data-reveal><span class="n">Limpieza facial<small>Tres opciones: $50, $60 y $80</small></span><span class="lead-dots"></span><span class="v">Desde $50</span></div>
+      <div class="menu-cat" data-reveal>Láser</div>
+      <div class="row" data-reveal><span class="n">Depilación láser<small>Por sesiones</small></span><span class="lead-dots"></span><span class="v t">Según zona</span></div>
+      <div class="row" data-reveal><span class="n">Remoción láser<small>Tatuajes y micropigmentación</small></span><span class="lead-dots"></span><span class="v t">Por sesión</span></div>
+      <p class="price-note" data-reveal>El láser lo cotiza directamente nuestro técnico láser. Las correcciones se evalúan en persona.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULTADOS ================= -->
+<section class="resultados" id="resultados">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
       <span class="caps">Resultados reales</span>
-      <h2>Antes y después, sin filtros</h2>
+      <h2>Antes y después, <i>sin filtros</i></h2>
       <p>Trabajos reales de MAU Studio. En micropigmentación, el color recién hecho se suaviza en unas semanas y queda aún más natural.</p>
     </div>
     <div class="filters" role="group" aria-label="Filtrar resultados">
@@ -308,273 +616,403 @@ footer .logo{font-size:20px;color:var(--ink)}
       <button type="button" class="f" data-f="laser" aria-pressed="false">Láser</button>
     </div>
     <div class="results">
-      <figure data-cat="micro" class="ba">
-        <div class="ph"><img src="cejas.jpg" alt="Antes y después de cejas con técnica Rouse" loading="lazy">
-        <span class="tag t1">Antes</span><span class="tag t2">Después</span>
-        </div>
-        <figcaption><b>Cejas efecto Rouse.</b> Forma diseñada según su rostro.</figcaption>
-      </figure>
-      <figure data-cat="micro" class="ba">
-        <div class="ph"><img src="labios.jpg" alt="Antes y después de labios Juicy Lips" loading="lazy">
-        <span class="tag t1">Antes</span><span class="tag t2">Después</span>
-        </div>
-        <figcaption><b>Juicy Lips.</b> Color uniforme y contorno definido.</figcaption>
-      </figure>
-      <figure data-cat="cejas">
-        <div class="ph"><img src="fotos/cejas-definidas.jpg" alt="Resultado de laminado de cejas" loading="lazy">
-        </div>
-        <figcaption><b>Laminado de cejas.</b> Cejas peinadas que abren la mirada.</figcaption>
-      </figure>
-      <figure data-cat="cejas" class="ba">
-        <div class="ph"><img src="fotos/laminado.jpg" alt="Antes y después de diseño y laminado de cejas" loading="lazy">
-        <span class="tag t1">Antes</span><span class="tag t2">Después</span>
-        </div>
-        <figcaption><b>Diseño + laminado.</b> Cejas peinadas, llenas y ordenadas.</figcaption>
-      </figure>
-      <figure data-cat="cejas">
-        <div class="ph"><img src="fotos/henna.jpg" alt="Cejas semipermanentes con henna recién aplicada" loading="lazy">
-        </div>
-        <figcaption><b>Cejas semipermanentes.</b> Henna con diseño que armoniza su rostro.</figcaption>
-      </figure>
-      <figure data-cat="cejas" class="ba">
-        <div class="ph"><img src="fotos/lifting.jpg" alt="Antes y después de lifting de pestañas" loading="lazy">
-        <span class="tag t1">Antes</span><span class="tag t2">Después</span>
-        </div>
-        <figcaption><b>Lifting de pestañas.</b> Sus pestañas naturales, con curva.</figcaption>
-      </figure>
-      <figure data-cat="piel" class="ba">
-        <div class="ph"><img src="fotos/limpieza-dermapen.jpg" alt="Antes y después de limpieza facial con dermapen" loading="lazy">
-        <span class="tag t1">Antes</span><span class="tag t2">Después</span>
-        </div>
-        <figcaption><b>Limpieza con dermapen.</b> Piel más uniforme y luminosa.</figcaption>
-      </figure>
-      <figure data-cat="piel">
-        <div class="ph"><img src="fotos/mascarilla.jpg" alt="Mascarilla durante una limpieza facial" loading="lazy">
-        </div>
-        <figcaption><b>Limpieza facial.</b> Mascarilla y cuidado paso a paso.</figcaption>
-      </figure>
-      <figure data-cat="laser">
-        <div class="ph"><img src="fotos/laser.jpg" alt="Maury realizando un tratamiento láser con protección ocular" loading="lazy">
-        </div>
-        <figcaption><b>Láser.</b> Protección ocular en cada sesión.</figcaption>
-      </figure>
+      <figure data-cat="micro"><div class="ph"><img src="cejas.jpg" alt="Antes y después de cejas con técnica Rouse" loading="lazy"><span class="tag t1">Antes</span><span class="tag t2">Después</span></div>
+        <figcaption><b>Cejas efecto Rouse.</b> Forma diseñada según su rostro.</figcaption></figure>
+      <figure data-cat="micro"><div class="ph"><img src="labios.jpg" alt="Antes y después de labios Juicy Lips" loading="lazy"><span class="tag t1">Antes</span><span class="tag t2">Después</span></div>
+        <figcaption><b>Juicy Lips.</b> Color uniforme y contorno definido.</figcaption></figure>
+      <figure data-cat="cejas"><div class="ph"><img src="fotos/cejas-definidas.jpg" alt="Resultado de laminado de cejas" loading="lazy"></div>
+        <figcaption><b>Laminado de cejas.</b> Cejas peinadas que abren la mirada.</figcaption></figure>
+      <figure data-cat="cejas"><div class="ph"><img src="fotos/laminado.jpg" alt="Antes y después de diseño y laminado de cejas" loading="lazy"><span class="tag t1">Antes</span><span class="tag t2">Después</span></div>
+        <figcaption><b>Diseño + laminado.</b> Cejas peinadas, llenas y ordenadas.</figcaption></figure>
+      <figure data-cat="cejas"><div class="ph"><img src="fotos/henna.jpg" alt="Cejas semipermanentes con henna recién aplicada" loading="lazy"></div>
+        <figcaption><b>Cejas semipermanentes.</b> Henna con diseño que armoniza su rostro.</figcaption></figure>
+      <figure data-cat="cejas"><div class="ph"><img src="fotos/lifting.jpg" alt="Antes y después de lifting de pestañas" loading="lazy"><span class="tag t1">Antes</span><span class="tag t2">Después</span></div>
+        <figcaption><b>Lifting de pestañas.</b> Sus pestañas naturales, con curva.</figcaption></figure>
+      <figure data-cat="piel"><div class="ph"><img src="fotos/limpieza-dermapen.jpg" alt="Antes y después de limpieza facial con dermapen" loading="lazy"><span class="tag t1">Antes</span><span class="tag t2">Después</span></div>
+        <figcaption><b>Limpieza con dermapen.</b> Piel más uniforme y luminosa.</figcaption></figure>
+      <figure data-cat="piel"><div class="ph"><img src="fotos/mascarilla.jpg" alt="Mascarilla durante una limpieza facial" loading="lazy"></div>
+        <figcaption><b>Limpieza facial.</b> Mascarilla y cuidado paso a paso.</figcaption></figure>
+      <figure data-cat="laser"><div class="ph"><img src="fotos/laser.jpg" alt="Maury realizando un tratamiento láser con protección ocular" loading="lazy"></div>
+        <figcaption><b>Láser.</b> Protección ocular en cada sesión.</figcaption></figure>
     </div>
-
-    <svg class="arch" viewBox="0 0 120 28" aria-hidden="true" style="margin-top:56px"><path d="M4 22 Q40 2 116 14"/></svg>
-
     <div class="why">
-      <div>
-        <h3>Técnica certificada</h3>
-        <p>Más de 5 certificaciones en micropigmentación y cosmetología.</p>
-      </div>
-      <div>
-        <h3>Bioseguridad</h3>
-        <p>Agujas desechables, cabina desinfectada y pigmentos de calidad en cada cita.</p>
-      </div>
-      <div>
-        <h3>Te acompaño</h3>
-        <p>Recibes tu guía de cuidados y seguimiento durante la sanación, incluido el sol y la playa.</p>
-      </div>
+      <div data-reveal><h3>Técnica certificada</h3><p>Más de 5 certificaciones en micropigmentación y cosmetología.</p></div>
+      <div data-reveal><h3>Bioseguridad</h3><p>Agujas desechables, cabina desinfectada y pigmentos de calidad en cada cita.</p></div>
+      <div data-reveal><h3>Te acompaño</h3><p>Recibes tu guía de cuidados y seguimiento durante la sanación, incluido el sol y la playa.</p></div>
     </div>
   </div>
 </section>
 
-<section id="maury">
-  <div class="wrap about">
-    <div class="about-photo">
-      <img src="fotos/maury.jpg" alt="Maurymar Barbera, fundadora de MAU Studio" loading="lazy">
-    </div>
-    <div class="about-copy">
+<!-- ================= SOBRE MAURY ================= -->
+<section class="about" id="maury">
+  <div class="wrap">
+    <div class="arch-photo" data-reveal><img src="hero.jpg" alt="Maurymar Barbera, fundadora de MAU Studio" loading="lazy"></div>
+    <div class="about-copy" data-reveal>
       <span class="caps">Quién te atiende</span>
-      <h2>Soy Maury</h2>
+      <h2>Soy <i>Maury</i></h2>
       <p>Soy Maurymar Barbera, artista de cejas y labios en Punto Fijo. Me formé con Rosmary Barrios Academy y tengo más de 5 certificaciones en micropigmentación y cosmetología.</p>
       <p>Trabajo con la técnica Rouse porque busco lo mismo que tú: resultados naturales, que realcen tu rostro sin que nadie note que llevas maquillaje.</p>
       <p>Cada cita empieza con una evaluación. Te explico qué te conviene, diseñamos juntas y te acompaño hasta tu retoque.</p>
-      <a class="btn btn-main" href="#contacto">Agenda tu evaluación</a>
+      <span class="script" aria-hidden="true">Maury</span>
+      <a class="btn btn-ghost" href="https://www.instagram.com/maurypmu24_studio/" target="_blank" rel="noopener">@maurypmu24_studio</a>
     </div>
   </div>
 </section>
 
-<section id="instagram">
-  <div class="wrap ig">
-    <div class="head">
-      <span class="caps">Instagram</span>
-      <h2>Mira más trabajos cada semana</h2>
-      <p>Antes y después, procesos y cupos disponibles en mi Instagram.</p>
-    </div>
-    <a class="btn btn-line" href="https://www.instagram.com/maurypmu24_studio/" target="_blank" rel="noopener">@maurypmu24_studio</a>
-  </div>
-</section>
-
-<section id="preguntas" class="alt">
+<!-- ================= PREGUNTAS ================= -->
+<section class="faq-sec" id="preguntas">
   <div class="wrap">
-    <div class="head">
+    <div class="sec-head" data-reveal>
       <span class="caps">Preguntas frecuentes</span>
-      <h2>Lo que todas me preguntan</h2>
+      <h2>Lo que todas <i>me preguntan</i></h2>
     </div>
     <div class="faq">
-      <details>
-        <summary>¿Duele?</summary>
-        <p>Uso anestésico tópico antes y durante el procedimiento. La mayoría de mis clientas siente una molestia leve, parecida a un rasguño suave.</p>
-      </details>
-      <details>
-        <summary>¿Cuánto dura el resultado?</summary>
-        <p>Entre uno y tres años, según tu tipo de piel, tu rutina y la exposición al sol. Un retoque anual mantiene el color como el primer día.</p>
-      </details>
-      <details>
-        <summary>¿Puedo ir a la playa después?</summary>
-        <p>Durante la sanación, que tarda unas cuatro semanas, evita sol directo, playa, piscina y sudor intenso, sobre todo las dos primeras semanas. Te entrego una guía de cuidados para el calor de Paraguaná.</p>
-      </details>
-      <details>
-        <summary>¿Cuándo es el retoque?</summary>
-        <p>Entre cuatro y ocho semanas después de la primera sesión, cuando la piel ya sanó. Ahí ajustamos color y forma.</p>
-      </details>
-      <details>
-        <summary>¿Me pueden corregir un trabajo de otra persona?</summary>
-        <p>Sí, evalúo cada caso. Según el color y la forma, a veces se corrige encima y a veces hace falta aclarar primero con remoción láser. Te digo con honestidad qué se puede lograr.</p>
-      </details>
-      <details>
-        <summary>¿Cómo pago y aparto mi cita?</summary>
-        <p>Aceptamos Pago Móvil, Zelle, Binance y efectivo. Tu cita queda apartada con un abono.</p>
-      </details>
+      <details><summary>¿Duele?</summary><p>Uso anestésico tópico antes y durante el procedimiento. La mayoría de mis clientas siente una molestia leve, parecida a un rasguño suave.</p></details>
+      <details><summary>¿Cuánto dura el resultado?</summary><p>Entre uno y tres años, según tu tipo de piel, tu rutina y la exposición al sol. Un retoque anual mantiene el color como el primer día.</p></details>
+      <details><summary>¿Puedo ir a la playa después?</summary><p>Durante la sanación, que tarda unas cuatro semanas, evita sol directo, playa, piscina y sudor intenso, sobre todo las dos primeras semanas. Te entrego una guía de cuidados para el calor de Paraguaná.</p></details>
+      <details><summary>¿Cuándo es el retoque?</summary><p>Entre cuatro y ocho semanas después de la primera sesión, cuando la piel ya sanó. Ahí ajustamos color y forma.</p></details>
+      <details><summary>¿Me pueden corregir un trabajo de otra persona?</summary><p>Sí, evalúo cada caso. Según el color y la forma, a veces se corrige encima y a veces hace falta aclarar primero con remoción láser. Te digo con honestidad qué se puede lograr.</p></details>
+      <details><summary>¿Cómo pago y aparto mi cita?</summary><p>Aceptamos Pago Móvil, Zelle, Binance y efectivo. Tu cita queda apartada con un abono.</p></details>
     </div>
   </div>
 </section>
 
-<section id="contacto" class="contact">
-  <div class="wrap contact-grid">
-    <div class="contact-info">
-      <span class="caps">Contacto</span>
-      <h2>Agenda tu <i>evaluación</i></h2>
-      <p>Cuéntame qué te gustaría hacerte. Te respondo por WhatsApp con disponibilidad y precio.</p>
-      <div class="facts">
-        <span><b>Dónde:</b> Punto Fijo, Falcón</span>
-        <span><b>WhatsApp:</b> <span id="wa-visible">0412-108-0408</span></span>
-        <span><b>Instagram:</b> <a href="https://www.instagram.com/maurypmu24_studio/" target="_blank" rel="noopener">@maurypmu24_studio</a></span>
-        <span><b>Pagos:</b> Pago Móvil, Zelle, Binance y efectivo</span>
-      </div>
-    </div>
-    <form id="form" novalidate>
-      <div class="field">
-        <label for="nombre">Nombre</label>
-        <input id="nombre" name="nombre" autocomplete="given-name" maxlength="80" required>
-      </div>
-      <div class="field">
-        <label for="servicio">Servicio</label>
-        <select id="servicio" name="servicio">
-          <option>Cejas efecto Rouse</option>
-          <option>Juicy Lips</option>
-          <option>Corrección</option>
-          <option>Depilación y diseño de cejas</option>
-          <option>Cejas semipermanentes (henna)</option>
-          <option>Laminado de cejas</option>
-          <option>Lifting de pestañas</option>
-          <option>Depilación láser</option>
-          <option>Remoción láser</option>
-          <option>Limpieza facial</option>
-          <option>Aún no sé, quiero asesoría</option>
-        </select>
-      </div>
-      <div class="field full">
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" maxlength="1000" placeholder="Ej.: Quiero cejas naturales. Me las hice hace 2 años y se pusieron grises."></textarea>
-      </div>
-      <div class="field full">
-        <label for="dia">Día que prefieres</label>
-        <select id="dia" name="dia">
-          <option>Cualquier día</option>
-          <option>Lunes a viernes, mañana</option>
-          <option>Lunes a viernes, tarde</option>
-          <option>Sábado</option>
-        </select>
-      </div>
-      <p class="err" id="err" hidden>Escribe tu nombre para poder saludarte.</p>
-      <div class="form-foot">
-        <button class="btn btn-main" type="submit" id="enviar">Enviar solicitud</button>
-        <small>Guardamos tu solicitud para responderte y la abrimos en WhatsApp.</small>
-      </div>
-      <div class="done" id="done" hidden>
-        <strong id="estado-envio">Tu mensaje está listo.</strong>
-        <span id="preview"></span>
-        <a class="btn btn-main" id="wa-link" href="#" target="_blank" rel="noopener">Abrir WhatsApp</a>
-      </div>
-    </form>
-  </div>
+<!-- ================= 7. CIERRE ================= -->
+<section class="cierre" id="contacto" data-progress="enter">
+  <div class="big-word" aria-label="mau.">mau<span class="gold">.</span></div>
+  <span class="script">studio</span>
+  <p class="sub">Cejas · Labios · Pestañas · Láser · Piel<br>Punto Fijo, Falcón</p>
+  <button class="btn btn-white btn-wiggle" type="button" data-book>Reserva tu cita</button>
+  <div class="rise r1"><img src="labios.jpg" alt="" loading="lazy"></div>
+  <div class="rise r2"><img src="fotos/maury.jpg" alt="" loading="lazy"></div>
+  <div class="rise r3"><img src="cejas.jpg" alt="" loading="lazy"></div>
 </section>
+</main>
 
-<div class="wrap">
-  <footer>
-    <span class="logo">MAU <em>Studio</em></span>
-    <span>Cejas · Labios · Pestañas · Láser · Piel · Punto Fijo, Falcón</span>
-    <span><a href="https://www.instagram.com/maurypmu24_studio/" target="_blank" rel="noopener">@maurypmu24_studio</a> · Parte de la familia MAU by Maury</span>
-  </footer>
-</div>
+<!-- ================= 9. PIE ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <span class="brand"><b>MAU</b><span>studio · pmu</span></span>
+      <p style="margin-top:16px;max-width:34ch">Micropigmentación natural y cuidado de piel por Maurymar Barbera. Parte de la familia MAU by Maury.</p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="#" data-wa>WhatsApp 0412-108-0408</a></li>
+        <li><a href="https://www.instagram.com/maurypmu24_studio/" target="_blank" rel="noopener">Instagram @maurypmu24_studio</a></li>
+        <li>Punto Fijo, Falcón</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Pagos</h4>
+      <ul><li>Pago Móvil · Zelle</li><li>Binance · Efectivo</li><li>Cita apartada con abono</li></ul>
+    </div>
+    <div class="tiny">
+      <span>© <span id="yr">2026</span> MAU Studio</span>
+      <button class="replay" type="button" id="replay">Volver a la puerta ↺</button>
+    </div>
+  </div>
+</footer>
 
 <a class="fab" id="fab" href="#contacto" aria-label="Escríbeme por WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5z"/></svg>WhatsApp</a>
 
+<!-- ================= 8. RESERVA ================= -->
+<dialog class="booking" id="booking" aria-labelledby="bk-title">
+  <form class="bk" id="bk-form" novalidate>
+    <button class="bk-close" type="button" id="bk-close" aria-label="Cerrar">×</button>
+    <h2 id="bk-title">Reserva <span class="script">tu cita</span></h2>
+    <span class="caps">MAU Studio · Punto Fijo</span>
+    <div class="bk-grid">
+      <div>
+        <div class="cal-head">
+          <strong id="cal-month">mes</strong>
+          <div class="cal-nav">
+            <button type="button" id="cal-prev" aria-label="Mes anterior">‹</button>
+            <button type="button" id="cal-next" aria-label="Mes siguiente">›</button>
+          </div>
+        </div>
+        <div class="cal" id="cal" role="group" aria-label="Elige el día"></div>
+      </div>
+      <div class="bk-side">
+        <div>
+          <span class="lbl" id="slots-lbl">Horario</span>
+          <div class="slots" id="slots" role="group" aria-labelledby="slots-lbl"><span class="hint">Elige primero un día.</span></div>
+        </div>
+        <div>
+          <label for="bk-servicio">Servicio</label>
+          <select id="bk-servicio">
+            <option>Cejas efecto Rouse</option>
+            <option>Juicy Lips</option>
+            <option>Corrección</option>
+            <option>Depilación y diseño de cejas</option>
+            <option>Cejas semipermanentes (henna)</option>
+            <option>Laminado de cejas</option>
+            <option>Lifting de pestañas</option>
+            <option>Depilación láser</option>
+            <option>Remoción láser</option>
+            <option>Limpieza facial</option>
+            <option>Aún no sé, quiero asesoría</option>
+          </select>
+        </div>
+        <div>
+          <label for="bk-nombre">Nombre</label>
+          <input id="bk-nombre" autocomplete="given-name" maxlength="80" required>
+        </div>
+        <div>
+          <label for="bk-nota">Nota (opcional)</label>
+          <textarea id="bk-nota" maxlength="1000" placeholder="Ej.: Me hice cejas hace 2 años y se pusieron grises."></textarea>
+        </div>
+      </div>
+      <p class="err" id="bk-err" hidden></p>
+      <div class="bk-foot">
+        <button class="btn btn-burdeos" type="submit" id="bk-send">Confirmar por WhatsApp</button>
+        <small>Te confirmo la disponibilidad por WhatsApp. El horario queda apartado con un abono.</small>
+      </div>
+      <div class="bk-done" id="bk-done" hidden>
+        <strong id="bk-estado">Tu mensaje está listo.</strong>
+        <span id="bk-preview"></span>
+        <a class="btn btn-burdeos" id="bk-wa" href="#" target="_blank" rel="noopener">Abrir WhatsApp</a>
+      </div>
+    </div>
+  </form>
+</dialog>
+
 <script>
 (function(){
-  // Cambia este número por tu WhatsApp con código de país, sin "+" ni espacios. Ej.: 584121234567
+  // ====== DATOS EDITABLES ======
+  // WhatsApp con código de país, sin "+" ni espacios.
   var WHATSAPP = "584121080408";
+  // HORARIOS de citas (edítalos a tu gusto). Los domingos (0) aparecen cerrados.
+  var HORARIOS = ["9:00 a. m.", "10:30 a. m.", "1:00 p. m.", "2:30 p. m.", "4:00 p. m."];
+  var DIAS_CERRADO = [0];
+  // ==============================
 
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var waBase = "https://wa.me/" + WHATSAPP;
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  // WhatsApp directo (botón flotante y pie)
+  var hola = waBase + "?text=" + encodeURIComponent("Hola Maury, quiero información de MAU Studio.");
+  document.querySelectorAll("#fab,[data-wa]").forEach(function(a){ a.href = hola; a.target = "_blank"; a.rel = "noopener"; });
+
+  // ---------- intro ----------
+  var intro = document.getElementById("intro");
+  var seen = false;
+  try { seen = sessionStorage.getItem("mau-intro") === "1"; } catch(e){}
+  function finishIntro(){
+    intro.classList.add("gone");
+    document.body.classList.remove("locked");
+    setTimeout(function(){ intro.hidden = true; intro.classList.remove("opening","gone"); }, 650);
+    try { sessionStorage.setItem("mau-intro","1"); } catch(e){}
+    startHero();
+  }
+  function openDoor(){
+    if (intro.classList.contains("opening")) return;
+    if (reduce){ finishIntro(); return; }
+    intro.classList.add("opening");
+    setTimeout(finishIntro, 1900);
+  }
+  function showIntro(){
+    intro.hidden = false;
+    document.body.classList.add("locked");
+    window.scrollTo(0,0);
+    document.getElementById("intro-enter").focus({preventScroll:true});
+  }
+  intro.addEventListener("click", function(e){ if (e.target.id === "intro-skip") { finishIntro(); } else { openDoor(); } });
+  intro.addEventListener("wheel", openDoor, {passive:true});
+  intro.addEventListener("touchmove", openDoor, {passive:true});
+  document.addEventListener("keydown", function(e){ if (!intro.hidden && (e.key === "Escape")) finishIntro(); });
+  document.getElementById("replay").addEventListener("click", showIntro);
+  if (seen) { document.body.classList.remove("locked"); } else { showIntro(); }
+
+  // ---------- hero: letra por letra ----------
+  var h1 = document.querySelector(".hero h1.split");
+  (function split(el){
+    var nodes = Array.prototype.slice.call(el.childNodes), i = 0;
+    el.textContent = "";
+    nodes.forEach(function(n){
+      var target = el, text = n.textContent;
+      if (n.nodeType === 1){ target = document.createElement(n.tagName); el.appendChild(target); }
+      text.split(/(\s+)/).forEach(function(word){
+        if (!word) return;
+        if (/^\s+$/.test(word)){ target.appendChild(document.createTextNode(" ")); return; }
+        var w = document.createElement("span"); w.className = "w"; w.setAttribute("aria-hidden","true");
+        word.split("").forEach(function(c){
+          var s = document.createElement("span"); s.className = "ch"; s.textContent = c;
+          s.style.transitionDelay = (i++ * 38) + "ms"; w.appendChild(s);
+        });
+        target.appendChild(w);
+      });
+    });
+  })(h1);
+  var heroStarted = false;
+  function startHero(){ if (heroStarted) return; heroStarted = true; requestAnimationFrame(function(){ h1.classList.add("in"); }); }
+  if (seen) setTimeout(startHero, 150);
+
+  // ---------- nav ----------
+  var nav = document.getElementById("nav");
+  var menu = document.getElementById("menu"), burger = document.getElementById("burger");
+  function setMenu(open){ menu.classList.toggle("open", open); burger.setAttribute("aria-expanded", open); document.body.classList.toggle("locked", open); }
+  burger.addEventListener("click", function(){ setMenu(true); });
+  document.getElementById("menu-close").addEventListener("click", function(){ setMenu(false); });
+  menu.querySelectorAll("a,button").forEach(function(a){ a.addEventListener("click", function(){ setMenu(false); }); });
+
+  // ---------- aparición al hacer scroll ----------
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, {threshold:.15, rootMargin:"0px 0px -6% 0px"});
+  document.querySelectorAll("[data-reveal],.svc-card").forEach(function(el){ io.observe(el); });
+
+  // ---------- progreso de scroll (hero 2, tinta, cierre) ----------
+  var prog = Array.prototype.slice.call(document.querySelectorAll("[data-progress]"));
+  var ticking = false;
+  function ease(t){ return 1 - Math.pow(1 - t, 3); }
+  function update(){
+    ticking = false;
+    var vh = window.innerHeight;
+    nav.classList.toggle("solid", window.scrollY > vh * .6);
+    if (reduce) return;
+    prog.forEach(function(el){
+      var r = el.getBoundingClientRect(), mode = el.getAttribute("data-progress"), p;
+      if (r.bottom < -vh || r.top > vh * 2) return;
+      if (mode === "sticky") p = ease(Math.min(Math.max(-r.top / (r.height - vh) * 1.35, 0), 1));
+      else if (mode === "enter") p = ease(Math.min(Math.max((vh - r.top) / vh, 0), 1));
+      else p = Math.min(Math.max((vh - r.top) / (vh + r.height), 0), 1);
+      el.style.setProperty("--p", p.toFixed(4));
+    });
+  }
+  function onScroll(){ if (!ticking){ ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  window.addEventListener("resize", onScroll);
+  update();
+
+  // ---------- cursor ----------
+  var cur = document.getElementById("cursor");
+  if (window.matchMedia("(hover:hover) and (pointer:fine)").matches && !reduce){
+    var x = -100, y = -100, cx = -100, cy = -100;
+    document.addEventListener("mousemove", function(e){ x = e.clientX; y = e.clientY; });
+    document.addEventListener("mouseover", function(e){ cur.classList.toggle("big", !!e.target.closest("a,button,img,video,summary,select")); });
+    (function loop(){ cx += (x - cx) * .2; cy += (y - cy) * .2; cur.style.transform = "translate(" + cx + "px," + cy + "px)"; requestAnimationFrame(loop); })();
+  } else { cur.remove(); }
+
+  // ---------- film ----------
+  var vid = document.getElementById("film-video"), vt = document.getElementById("film-toggle");
+  var userPaused = reduce;
+  var pauseIcon = vt.innerHTML, playIcon = '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2l10 6-10 6z"/></svg>';
+  function syncIcon(){ var playing = !vid.paused; vt.innerHTML = playing ? pauseIcon : playIcon; vt.setAttribute("aria-label", playing ? "Pausar video" : "Reproducir video"); }
+  vid.addEventListener("play", syncIcon); vid.addEventListener("pause", syncIcon); syncIcon();
+  vt.addEventListener("click", function(){ if (vid.paused){ userPaused = false; vid.play().catch(function(){}); } else { userPaused = true; vid.pause(); } });
+  new IntersectionObserver(function(en){
+    if (en[0].isIntersecting){ if (!userPaused) vid.play().catch(function(){}); } else { vid.pause(); }
+  }, {threshold:.35}).observe(vid);
+
+  // ---------- resultados: filtros ----------
   var fbtns = document.querySelectorAll(".f");
   fbtns.forEach(function(btn){
     btn.addEventListener("click", function(){
       var f = btn.getAttribute("data-f");
       fbtns.forEach(function(x){ x.setAttribute("aria-pressed", x === btn ? "true" : "false"); });
-      document.querySelectorAll(".results figure").forEach(function(fig){
-        fig.hidden = !(f === "all" || fig.getAttribute("data-cat") === f);
-      });
+      document.querySelectorAll(".results figure").forEach(function(fig){ fig.hidden = !(f === "all" || fig.getAttribute("data-cat") === f); });
     });
   });
-  var form = document.getElementById("form");
-  var err = document.getElementById("err");
-  var done = document.getElementById("done");
-  if (!/X/.test(WHATSAPP)) {
-        var fab = document.getElementById("fab");
-    fab.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Hola Maury, quiero información de MAU Studio.");
-    fab.target = "_blank"; fab.rel = "noopener";
+
+  // ---------- reserva ----------
+  var dlg = document.getElementById("booking");
+  var MESES = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+  var DIAS = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+  var hoy = new Date(); hoy.setHours(0,0,0,0);
+  var view = new Date(hoy.getFullYear(), hoy.getMonth(), 1);
+  var maxView = new Date(hoy.getFullYear(), hoy.getMonth() + 2, 1);
+  var selDate = null, selTime = null;
+  var calEl = document.getElementById("cal"), slotsEl = document.getElementById("slots");
+  var prevB = document.getElementById("cal-prev"), nextB = document.getElementById("cal-next");
+  function renderCal(){
+    document.getElementById("cal-month").textContent = MESES[view.getMonth()] + " " + view.getFullYear();
+    prevB.disabled = view <= new Date(hoy.getFullYear(), hoy.getMonth(), 1);
+    nextB.disabled = view >= maxView;
+    calEl.innerHTML = "";
+    ["L","M","M","J","V","S","D"].forEach(function(d){ var s = document.createElement("span"); s.className = "wd"; s.textContent = d; s.setAttribute("aria-hidden","true"); calEl.appendChild(s); });
+    var offset = (view.getDay() + 6) % 7;
+    for (var k = 0; k < offset; k++) calEl.appendChild(document.createElement("span"));
+    var days = new Date(view.getFullYear(), view.getMonth() + 1, 0).getDate();
+    for (var d = 1; d <= days; d++){
+      var dt = new Date(view.getFullYear(), view.getMonth(), d);
+      var b = document.createElement("button"); b.type = "button"; b.textContent = d;
+      b.setAttribute("aria-label", DIAS[dt.getDay()] + " " + d + " de " + MESES[dt.getMonth()]);
+      b.disabled = dt < hoy || DIAS_CERRADO.indexOf(dt.getDay()) > -1;
+      if (+dt === +hoy) b.classList.add("today");
+      b.setAttribute("aria-pressed", selDate && +selDate === +dt ? "true" : "false");
+      (function(dt){ b.addEventListener("click", function(){ selDate = dt; selTime = null; renderCal(); renderSlots(); }); })(dt);
+      calEl.appendChild(b);
+    }
   }
+  function renderSlots(){
+    slotsEl.innerHTML = "";
+    if (!selDate){ slotsEl.innerHTML = '<span class="hint">Elige primero un día.</span>'; return; }
+    HORARIOS.forEach(function(h){
+      var b = document.createElement("button"); b.type = "button"; b.textContent = h;
+      b.setAttribute("aria-pressed", selTime === h ? "true" : "false");
+      b.addEventListener("click", function(){ selTime = h; renderSlots(); });
+      slotsEl.appendChild(b);
+    });
+  }
+  prevB.addEventListener("click", function(){ view = new Date(view.getFullYear(), view.getMonth() - 1, 1); renderCal(); });
+  nextB.addEventListener("click", function(){ view = new Date(view.getFullYear(), view.getMonth() + 1, 1); renderCal(); });
+  var cargada = Date.now();
+  function openBooking(servicio){
+    if (servicio){
+      var sel = document.getElementById("bk-servicio");
+      Array.prototype.forEach.call(sel.options, function(o){ if (o.text === servicio) sel.value = o.value; });
+    }
+    document.getElementById("bk-done").hidden = true;
+    document.getElementById("bk-err").hidden = true;
+    renderCal(); renderSlots();
+    if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open","");
+    document.body.classList.add("locked");
+  }
+  function closeBooking(){ if (dlg.open) dlg.close(); }
+  dlg.addEventListener("close", function(){ document.body.classList.remove("locked"); });
+  dlg.addEventListener("click", function(e){ if (e.target === dlg) closeBooking(); });
+  document.getElementById("bk-close").addEventListener("click", closeBooking);
+  document.querySelectorAll("[data-book]").forEach(function(b){
+    b.addEventListener("click", function(e){ e.preventDefault(); openBooking(b.getAttribute("data-book")); });
+  });
+
   // Supabase: la clave publicable solo permite INSERTAR en la tabla leads (RLS activo).
   var SUPABASE_URL = "https://hchrocuwukgnmntlvggm.supabase.co";
   var SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhjaHJvY3V3dWtnbm1udGx2Z2dtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0NDgzOTgsImV4cCI6MjEwNjAyNDM5OH0.rG7Qp7IpJq7MYn3TV1mUPnnO-EMci4h8IB1j7ZlniKI"; // clave pública anon (solo permite insertar)
-  var cargada = Date.now();
   function guardarLead(datos){
     var ctrl = ("AbortController" in window) ? new AbortController() : null;
     var t = setTimeout(function(){ if (ctrl) ctrl.abort(); }, 10000);
     return fetch(SUPABASE_URL + "/rest/v1/leads", {
-      method: "POST",
-      keepalive: true,
-      signal: ctrl ? ctrl.signal : undefined,
+      method: "POST", keepalive: true, signal: ctrl ? ctrl.signal : undefined,
       headers: { "apikey": SUPABASE_KEY, "Authorization": "Bearer " + SUPABASE_KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
       body: JSON.stringify(datos)
     }).then(function(r){ clearTimeout(t); if (!r.ok) throw new Error("HTTP " + r.status); });
   }
-  var btn = document.getElementById("enviar");
-  var estado = document.getElementById("estado-envio");
-  form.addEventListener("submit", function(e){
+  var err = document.getElementById("bk-err");
+  document.getElementById("bk-form").addEventListener("submit", function(e){
     e.preventDefault();
-    var nombre = document.getElementById("nombre").value.trim();
-    if (!nombre){ err.hidden = false; document.getElementById("nombre").focus(); return; }
+    var nombre = document.getElementById("bk-nombre").value.trim();
+    var msg = !selDate ? "Elige el día de tu cita." : !selTime ? "Elige un horario." : !nombre ? "Escribe tu nombre para poder saludarte." : "";
+    if (msg){ err.textContent = msg; err.hidden = false; if (!nombre && selDate && selTime) document.getElementById("bk-nombre").focus(); return; }
     err.hidden = true;
-    var servicio = document.getElementById("servicio").value;
-    var mensaje = document.getElementById("mensaje").value.trim();
-    var dia = document.getElementById("dia").value;
-    var texto = "Hola Maury, soy " + nombre + ". Me interesa: " + servicio + ". Prefiero: " + dia + "." + (mensaje ? " " + mensaje : "");
-    document.getElementById("preview").textContent = "“" + texto + "”";
-    document.getElementById("wa-link").href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(texto);
-    btn.disabled = true; btn.textContent = "Enviando…";
-    var mostrar = function(ok){
-      estado.textContent = ok ? "✓ Recibimos tu solicitud. Escríbeme por WhatsApp para agendar más rápido." : "No pudimos guardar tu solicitud, pero puedes escribirme directo por WhatsApp.";
-      done.hidden = false; btn.disabled = false; btn.textContent = "Enviar solicitud";
-    };
-    if (Date.now() - cargada < 1500) { mostrar(true); return; } // envío instantáneo = bot
-    guardarLead({ nombre: nombre.slice(0,80), servicio: servicio, dia: dia, mensaje: mensaje.slice(0,1000) || null, origen: "web" })
-      .then(function(){ mostrar(true); })
-      .catch(function(){ mostrar(false); });
+    var servicio = document.getElementById("bk-servicio").value;
+    var nota = document.getElementById("bk-nota").value.trim();
+    var dia = DIAS[selDate.getDay()] + " " + selDate.getDate() + " de " + MESES[selDate.getMonth()] + ", " + selTime;
+    var texto = "Hola Maury, soy " + nombre + ". Quiero reservar: " + servicio + ". Día: " + dia + "." + (nota ? " " + nota : "");
+    var url = waBase + "?text=" + encodeURIComponent(texto);
+    var win = window.open(url, "_blank");
+    if (win) { try { win.opener = null; } catch(x){} }
+    document.getElementById("bk-preview").textContent = "“" + texto + "”";
+    document.getElementById("bk-wa").href = url;
+    document.getElementById("bk-estado").textContent = win ? "✓ Abrimos WhatsApp con tu mensaje. Si no se abrió, toca el botón." : "Tu mensaje está listo. Toca el botón para enviarlo por WhatsApp.";
+    document.getElementById("bk-done").hidden = false;
+    if (Date.now() - cargada < 1500) return; // envío instantáneo = bot
+    guardarLead({ nombre: nombre.slice(0,80), servicio: servicio, dia: dia, mensaje: nota.slice(0,1000) || null, origen: "web" }).catch(function(){});
   });
 })();
 </script>
-
 </body>
 </html>
