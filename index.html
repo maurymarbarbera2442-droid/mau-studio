@@ -175,7 +175,7 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .reels .stage::before{content:"";position:absolute;inset:0;background:radial-gradient(45% 50% at 50% 45%,rgba(122,35,51,.7) 0%,transparent 75%);opacity:calc(.3 + var(--p) * .7)}
 .center-shot{position:absolute;left:50%;top:45%;width:clamp(200px,24vw,330px);aspect-ratio:4/5;border-radius:6px;overflow:hidden;transform:translate(-50%,-50%) scale(calc(1.2 - var(--p) * .2));box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
 .center-shot img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
-.mini{position:absolute;width:clamp(96px,11.5vw,160px);aspect-ratio:9/16;border-radius:16px;overflow:hidden;background:#111;border:3px solid #1b1717;box-shadow:0 30px 60px -20px rgba(0,0,0,.85);
+.mini{position:absolute;width:clamp(100px,12.5vw,175px);aspect-ratio:385/434;border-radius:16px;overflow:hidden;background:#111;border:3px solid #1b1717;box-shadow:0 30px 60px -20px rgba(0,0,0,.85);
   transform:translate(calc(var(--sx) * (1 - var(--p))),calc(var(--sy) * (1 - var(--p)))) rotate(calc(var(--r) * (1 - var(--p)) + var(--r2)));opacity:calc(.15 + var(--p))}
 .mini img{width:100%;height:100%;object-fit:cover}
 .mini .ui{position:absolute;inset:auto 0 0;padding:26px 9px 9px;background:linear-gradient(transparent,rgba(0,0,0,.75));font:500 10px/1.3 var(--sans);color:#fff;display:flex;justify-content:space-between;align-items:flex-end;gap:6px}
@@ -263,12 +263,21 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .portafolio .sec-head p{color:rgba(247,244,242,.72)}
 .rail{display:flex;gap:clamp(14px,2vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;padding:6px clamp(16px,4vw,48px) 24px;scrollbar-width:none}
 .rail::-webkit-scrollbar{display:none}
-.reel{position:relative;flex:0 0 clamp(200px,22vw,280px);aspect-ratio:9/16;border-radius:22px;overflow:hidden;background:#151212;scroll-snap-align:center;border:1px solid var(--line-d)}
+.reel{position:relative;flex:0 0 clamp(220px,24vw,300px);aspect-ratio:385/434;border-radius:22px;overflow:hidden;background:#151212;scroll-snap-align:center;border:1px solid var(--line-d)}
 .reel img,.reel video{width:100%;height:100%;object-fit:cover}
 .reel .ui{position:absolute;inset:auto 0 0;padding:40px 14px 14px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-size:13px;line-height:1.35}
 .reel .ui b{display:block;font:400 22px/1 var(--display);letter-spacing:.04em;margin-bottom:4px}
 .reel .tag{position:absolute;left:12px;top:12px;font:500 10px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;background:rgba(14,12,12,.6);padding:7px 10px;border-radius:999px;backdrop-filter:blur(4px)}
-.reel .vf{inset:12px}
+.reel .views{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:rgba(247,244,242,.85)}
+.reel .views svg{width:15px;height:15px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:0 0 clamp(36px,5vw,56px);border-block:1px solid var(--line-d);padding-block:24px}
+.stats b{display:block;font:400 clamp(48px,6vw,84px)/.9 var(--display);color:var(--blanco)}
+.stats span{font-size:13px;color:rgba(247,244,242,.65);letter-spacing:.06em}
+@media (max-width:640px){.stats{grid-template-columns:1fr;gap:14px}}
+.brands{display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px;margin-top:clamp(40px,5vw,64px);padding-top:26px;border-top:1px solid var(--line-d)}
+.brands .caps{color:var(--taupe);width:100%}
+.brands span.b{font:400 clamp(26px,3vw,40px)/1 var(--display);letter-spacing:.04em;color:rgba(247,244,242,.85)}
+.brands span.b i{font:italic 400 .7em var(--it);text-transform:none;color:var(--rosa)}
 .rail-hint{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:8px;color:rgba(247,244,242,.6);font-size:13px}
 .rail-nav{display:flex;gap:8px}
 .rail-nav button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line-d);background:transparent;color:var(--blanco);cursor:pointer;font-size:18px}
@@ -488,9 +497,9 @@ html.lenis,html.lenis body{height:auto}
 <section class="hero" id="inicio" data-progress="leave">
   <div class="wrap">
     <div class="hero-copy">
-      <span class="caps">Creadora de contenido · Social media · Meta Ads</span>
+      <span class="caps">Creadora de contenido · Moda y estética · Meta Ads</span>
       <h1 class="split" aria-label="Contenido que vende.">Contenido que <i>vende.</i></h1>
-      <p class="lead" data-reveal>Estrategia, guiones, edición y publicidad para marcas de moda y estética. Convierto tu talento en una marca que se ve, se recuerda y vende.</p>
+      <p class="lead" data-reveal>Creo contenido para marcas de moda y estética: estrategia, guiones, edición y publicidad. Transformo ideas en propósito, y tu talento en una marca que vende.</p>
       <div class="hero-actions" data-reveal>
         <button class="btn btn-white btn-wiggle" type="button" data-book>Trabajemos juntas</button>
         <a class="btn btn-ghost" href="#planes">Ver planes</a>
@@ -510,12 +519,12 @@ html.lenis,html.lenis body{height:auto}
 <section class="reels" id="reels" data-progress="sticky" aria-label="Tú grabas, yo lo hago brillar">
   <div class="stage">
     <div class="center-shot"><img src="fotos/hero.jpg" alt="Mau, creadora de contenido" loading="lazy"></div>
-    <!-- REELS: cambia estas fotos por portadas de tus mejores reels -->
-    <div class="mini m1"><img src="fotos/cejas.jpg" alt="" loading="lazy"><div class="ui"><span>Antes y después ›››</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
-    <div class="mini m2"><img src="fotos/labios.jpg" alt="" loading="lazy"><div class="ui"><span>Tu marca en 3 segundos</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21l-1.4-1.3C5.4 15 2 12 2 8.4 2 5.4 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.4 22 8.4c0 3.6-3.4 6.6-8.6 11.3z"/></svg></div></div>
-    <div class="mini m3"><img src="fotos/lifting.jpg" alt="" loading="lazy"><div class="ui"><span>Gancho + resultado</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
-    <div class="mini m4"><img src="fotos/laminado.jpg" alt="" loading="lazy"><div class="ui"><span>Carrusel ›››››</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="13" height="16" rx="2"/><path d="M20 7v13"/></svg></div></div>
-    <div class="mini m5"><img src="film/proceso-poster.jpg" alt="" loading="lazy"></div>
+    <!-- REELS: portadas reales de tu Instagram (recortadas de tu captura). Si tienes las portadas originales, reemplaza los archivos en ig/ -->
+    <div class="mini m1"><img src="ig/p06.jpg" alt="" loading="lazy"><div class="ui"><span>3,708 vistas</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+    <div class="mini m2"><img src="ig/p10.jpg" alt="" loading="lazy"><div class="ui"><span>3,075 vistas</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21l-1.4-1.3C5.4 15 2 12 2 8.4 2 5.4 4.4 3 7.4 3c1.7 0 3.4.8 4.6 2.1C13.2 3.8 14.9 3 16.6 3 19.6 3 22 5.4 22 8.4c0 3.6-3.4 6.6-8.6 11.3z"/></svg></div></div>
+    <div class="mini m3"><img src="ig/p08.jpg" alt="" loading="lazy"><div class="ui"><span>Gancho + guion</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div></div>
+    <div class="mini m4"><img src="ig/p05.jpg" alt="" loading="lazy"><div class="ui"><span>Carrusel ›››››</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="13" height="16" rx="2"/><path d="M20 7v13"/></svg></div></div>
+    <div class="mini m5"><img src="ig/p07.jpg" alt="" loading="lazy"></div>
     <div class="reels-copy">
       <h2>Tú grabas. <i>Yo lo hago brillar.</i></h2>
       <p>Ideas, guiones y estructura para que cada video tenga un objetivo.</p>
@@ -557,27 +566,27 @@ html.lenis,html.lenis body{height:auto}
         <p>Ideas, calendario y objetivos claros para cada publicación. Nada se publica sin un porqué.</p>
       </article>
       <article class="svc">
-        <div class="shape"><img src="fotos/hero.jpg" alt="Retrato editorial para redes" loading="lazy"></div><span class="num">02</span>
+        <div class="shape"><img src="ig/p08.jpg" alt="Reel con gancho: Al mal tiempo, cejas y pestañas perfectas" loading="lazy"></div><span class="num">02</span>
         <h3>Guiones <i>para videos</i></h3>
         <p>Gancho, desarrollo y llamado a la acción. Tú solo grabas siguiendo el guion.</p>
       </article>
       <article class="svc">
-        <div class="shape"><img src="film/proceso-poster.jpg" alt="Video de un proceso de belleza" loading="lazy"></div><span class="num">03</span>
+        <div class="shape"><img src="ig/p07.jpg" alt="Grabación con aro de luz y teléfono" loading="lazy"></div><span class="num">03</span>
         <h3>Edición <i>de video</i></h3>
         <p>Reels editados con ritmo, textos y música, optimizados para retener y convertir.</p>
       </article>
       <article class="svc">
-        <div class="shape"><img src="fotos/laminado.jpg" alt="Antes y después para un carrusel" loading="lazy"></div><span class="num">04</span>
+        <div class="shape"><img src="ig/p05.jpg" alt="Carrusel: Cosas que no haría jamás como micropigmentadora" loading="lazy"></div><span class="num">04</span>
         <h3>Posts <i>y carruseles</i></h3>
         <p>Diseños que educan y venden, con edición de fotos incluida.</p>
       </article>
       <article class="svc">
-        <div class="shape"><img src="fotos/henna.jpg" alt="Contenido para historias" loading="lazy"></div><span class="num">05</span>
+        <div class="shape"><img src="ig/p06.jpg" alt="Reel de belleza con modelo" loading="lazy"></div><span class="num">05</span>
         <h3>Historias <i>informativas</i></h3>
         <p>Historias que acercan a tu clienta, responden dudas y la llevan a escribirte.</p>
       </article>
       <article class="svc">
-        <div class="shape"><img src="fotos/labios.jpg" alt="Identidad visual de una marca de estética" loading="lazy"></div><span class="num">06</span>
+        <div class="shape"><img src="ig/p11.jpg" alt="Identidad de Adore Beauty Studio" loading="lazy"></div><span class="num">06</span>
         <h3>Branding <i>y Meta Ads</i></h3>
         <p>Logo e identidad para que te reconozcan, y publicidad en Meta para que te encuentren.</p>
       </article>
@@ -607,21 +616,36 @@ html.lenis,html.lenis body{height:auto}
     <div class="sec-head" data-reveal>
       <span class="caps">Portafolio</span>
       <h2 class="split-h">Contenido <i>real</i></h2>
-      <p>Piezas para marcas de estética. Desliza para ver más.</p>
+      <p>Piezas reales de mi Instagram para marcas de estética. Desliza para ver más.</p>
+    </div>
+    <!-- NÚMEROS: datos de tu panel de Instagram (10 de octubre de 2026). Actualízalos cuando quieras -->
+    <div class="stats" data-reveal>
+      <div><b>5,3 mil</b><span>visualizaciones en los últimos 30 días</span></div>
+      <div><b>3,708</b><span>vistas en un solo reel</span></div>
+      <div><b>29</b><span>publicaciones creadas</span></div>
     </div>
   </div>
-  <!-- PORTAFOLIO: reemplaza por tus reels (video .mp4 vertical o portada .jpg) y cambia los textos -->
+  <!-- PORTAFOLIO: piezas reales de tu Instagram (recortadas de tu captura). Para más nitidez, reemplaza ig/pXX.jpg por las portadas originales -->
   <div class="rail" id="rail" data-lenis-prevent-horizontal>
-    <article class="reel"><video id="reel-video" src="film/proceso.mp4" poster="film/proceso-poster.jpg" muted loop playsinline preload="none" aria-label="Reel del proceso de micropigmentación"></video><div class="vf"><i></i><b><span class="rec-dot"></span>REEL</b></div><div class="ui"><b>Proceso en cabina</b>Video del paso a paso para generar confianza.</div></article>
-    <article class="reel"><img src="fotos/cejas.jpg" alt="Reel de antes y después de cejas" loading="lazy"><span class="tag">Reel</span><div class="ui"><b>Antes y después</b>El resultado habla primero.</div></article>
-    <article class="reel"><img src="fotos/labios.jpg" alt="Post de labios para una marca de estética" loading="lazy"><span class="tag">Post</span><div class="ui"><b>Juicy Lips</b>Detalle que provoca escribir.</div></article>
-    <article class="reel"><img src="fotos/limpieza-dermapen.jpg" alt="Carrusel educativo de limpieza facial" loading="lazy"><span class="tag">Carrusel</span><div class="ui"><b>Educa y vende</b>Carrusel de cuidado de piel.</div></article>
-    <article class="reel"><img src="fotos/lifting.jpg" alt="Reel de lifting de pestañas" loading="lazy"><span class="tag">Reel</span><div class="ui"><b>Gancho visual</b>Transformación en segundos.</div></article>
-    <article class="reel"><img src="fotos/hero.jpg" alt="Foto editorial de marca personal" loading="lazy"><span class="tag">Marca personal</span><div class="ui"><b>Tu cara, tu marca</b>Fotos editoriales de estudio.</div></article>
+    <article class="reel"><img src="ig/p06.jpg" alt="Belleza en movimiento, publicación de mi Instagram" loading="lazy"><span class="tag">Reel</span><div class="ui"><b>Belleza en movimiento</b><span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>3,708 vistas</span></div></article>
+    <article class="reel"><img src="ig/p10.jpg" alt="Detalle que engancha, publicación de mi Instagram" loading="lazy"><span class="tag">Reel</span><div class="ui"><b>Detalle que engancha</b><span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>3,075 vistas</span></div></article>
+    <article class="reel"><img src="ig/p04.jpg" alt="Piel y cejas de cerca, publicación de mi Instagram" loading="lazy"><span class="tag">Reel</span><div class="ui"><b>Piel y cejas de cerca</b><span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>2,247 vistas</span></div></article>
+    <article class="reel"><img src="ig/p12.jpg" alt="Labios con actitud, publicación de mi Instagram" loading="lazy"><span class="tag">Carrusel</span><div class="ui"><b>Labios con actitud</b><span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>2,013 vistas</span></div></article>
+    <article class="reel"><img src="ig/p01.jpg" alt="Hola, soy Maury, publicación de mi Instagram" loading="lazy"><span class="tag">Carrusel</span><div class="ui"><b>Hola, soy Maury</b><span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>1,976 vistas</span></div></article>
+    <article class="reel"><img src="ig/p05.jpg" alt="Cosas que NO haría jamás, publicación de mi Instagram" loading="lazy"><span class="tag">Carrusel</span><div class="ui"><b>Cosas que NO haría jamás</b><span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>1,735 vistas</span></div></article>
+    <article class="reel"><img src="ig/p08.jpg" alt="Al mal tiempo, cejas perfectas, publicación de mi Instagram" loading="lazy"><span class="tag">Reel</span><div class="ui"><b>Al mal tiempo, cejas perfectas</b><span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>1,719 vistas</span></div></article>
+    <article class="reel"><img src="ig/p02.jpg" alt="Marca personal en estudio, publicación de mi Instagram" loading="lazy"><span class="tag">Post</span><div class="ui"><b>Marca personal en estudio</b><span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>1,492 vistas</span></div></article>
+    <article class="reel"><img src="ig/p07.jpg" alt="Detrás de cámaras, publicación de mi Instagram" loading="lazy"><span class="tag">Reel</span><div class="ui"><b>Detrás de cámaras</b><span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>184 vistas</span></div></article>
   </div>
   <div class="wrap rail-hint">
     <span>Desliza <span class="arrows">›››››</span></span>
     <div class="rail-nav"><button type="button" id="rail-prev" aria-label="Anterior">‹</button><button type="button" id="rail-next" aria-label="Siguiente">›</button></div>
+  </div>
+  <div class="wrap">
+    <div class="brands" data-reveal>
+      <span class="caps">Marcas con las que trabajo</span>
+      <span class="b">Rosmary Barrios <i>academy</i></span><span class="b">Rosmary Barrios <i>store</i></span><span class="b">Adore <i>beauty studio</i></span><span class="b">MAU <i>studio</i></span>
+    </div>
   </div>
 </section>
 
@@ -666,14 +690,15 @@ html.lenis,html.lenis body{height:auto}
 <!-- ================= SOBRE MAU ================= -->
 <section class="about" id="mau">
   <div class="wrap">
-    <div class="about-shot" data-reveal><img src="fotos/hero.jpg" alt="Maurymar Barbera, fundadora de Mau Content" loading="lazy"></div>
+    <div class="about-shot" data-reveal><img src="ig/p02.jpg" style="object-position:70% 20%" alt="Maurymar Barbera, fundadora de Mau Content" loading="lazy"></div>
     <div class="about-copy" data-reveal>
       <span class="caps">Quién está detrás</span>
       <h2 class="split-h">Soy <i>Mau</i></h2>
-      <p>Soy Maurymar Barbera, creadora de contenido, social media manager y trafficker en Meta Ads. Trabajo con marcas de moda y estética: pestañas, cejas, belleza.</p>
-      <p>Estudio Publicidad y Mercadeo y formo parte del equipo de Rosmary Barrios. Sé lo que cuesta crecer en este mundo, por eso mi trabajo es convertir tu talento en negocio.</p>
+      <p>Soy Maurymar Barbera, creadora digital, social media manager y trafficker en Meta Ads. Creo contenido para marcas de moda y estética como Rosmary Barrios Academy y Rosmary Barrios Store.</p>
+      <p>Estudio Publicidad y Mercadeo y mi lema es simple: transformo ideas en propósito. Sé lo que cuesta crecer en este mundo, por eso mi trabajo es convertir tu talento en negocio.</p>
       <div class="chips"><span>Moda</span><span>Estética</span><span>Pestañas</span><span>Belleza</span></div>
-      <a class="btn btn-white" href="https://www.instagram.com/maurycontent/" target="_blank" rel="noopener">@Maurycontent</a>
+      <!-- INSTAGRAM: confirma tu usuario completo (en la captura se ve "mau_social...") y cámbialo aquí y en el pie -->
+      <a class="btn btn-white" href="https://www.instagram.com/mau_social/" target="_blank" rel="noopener">@mau_social</a>
     </div>
   </div>
 </section>
@@ -682,11 +707,11 @@ html.lenis,html.lenis body{height:auto}
 <section class="cierre" id="contacto" data-progress="enter">
   <div class="big-word" aria-label="mau.">mau<span class="dot">.</span></div>
   <span class="sub-it">content</span>
-  <p class="sub">Lleva tu marca al siguiente nivel. Contáctame hoy.</p>
+  <p class="sub">Transformo ideas en propósito. Lleva tu marca al siguiente nivel.</p>
   <button class="btn btn-white btn-wiggle" type="button" data-book>Trabajemos juntas</button>
-  <div class="rise r1"><img src="fotos/cejas.jpg" alt="" loading="lazy"></div>
+  <div class="rise r1"><img src="ig/p06.jpg" alt="" loading="lazy"></div>
   <div class="rise r2"><img src="fotos/maury.jpg" alt="" loading="lazy"></div>
-  <div class="rise r3"><img src="fotos/labios.jpg" alt="" loading="lazy"></div>
+  <div class="rise r3"><img src="ig/p10.jpg" alt="" loading="lazy"></div>
 </section>
 
 <!-- ================= BUCLE · otra toma ================= -->
@@ -709,7 +734,7 @@ html.lenis,html.lenis body{height:auto}
       <h4>Contacto</h4>
       <ul>
         <li><a href="#" data-wa>WhatsApp</a></li>
-        <li><a href="https://www.instagram.com/maurycontent/" target="_blank" rel="noopener">Instagram @Maurycontent</a></li>
+        <li><a href="https://www.instagram.com/mau_social/" target="_blank" rel="noopener">Instagram @mau_social</a></li>
         <li>Venezuela · trabajo en línea</li>
       </ul>
     </div>
@@ -955,8 +980,6 @@ html.lenis,html.lenis body{height:auto}
   function railStep(dir){ var card = rail.querySelector(".reel"); rail.scrollBy({left: dir * (card.offsetWidth + 20), behavior: reduce ? "auto" : "smooth"}); }
   document.getElementById("rail-prev").addEventListener("click", function(){ railStep(-1); });
   document.getElementById("rail-next").addEventListener("click", function(){ railStep(1); });
-  var vid = document.getElementById("reel-video");
-  if (!reduce) new IntersectionObserver(function(en){ if (en[0].isIntersecting) vid.play().catch(function(){}); else vid.pause(); }, {threshold:.4}).observe(vid);
 
   // ---------- contacto ----------
   var dlg = document.getElementById("booking"), srvSel = null;
