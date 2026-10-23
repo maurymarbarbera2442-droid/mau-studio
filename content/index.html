@@ -311,6 +311,9 @@ body::after{content:"";position:fixed;inset:-50%;z-index:90;pointer-events:none;
 .row .v{font:400 clamp(28px,2.6vw,36px)/1 var(--display);color:var(--vino);white-space:nowrap}
 .row .v.t{font:500 12px/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;text-align:right;white-space:normal;max-width:14ch}
 .price-note{margin-top:24px;color:#5b524e;font-size:15px}
+.menu-cat.lanz{margin-top:clamp(40px,5vw,64px)}
+.lanz-intro{color:#5b524e;font-size:15px;margin:4px 0 6px;max-width:60ch}
+.lanz-cta{margin-top:24px}
 .planes .wrap{display:block}
 .planes .sec-head{position:static;margin-bottom:clamp(32px,4vw,52px)}
 .plan-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
@@ -715,6 +718,13 @@ html.lenis,html.lenis body{height:auto}
       <div class="row" data-reveal><span class="n">Lead magnet<small>Guía o checklist en PDF para captar clientas</small></span><span class="lead-dots"></span><span class="v">$60</span></div>
       <div class="row" data-reveal><span class="n">Página web con IA<small>Landing de una página para tu marca</small></span><span class="lead-dots"></span><span class="v">Desde $150</span></div>
       <div class="row" data-reveal><span class="n">Meta Ads<small>Gestión de campañas, sin plan mensual</small></span><span class="lead-dots"></span><span class="v">$100 / mes</span></div>
+      <!-- PLAN LANZAMIENTO DE MARCA: para marcas de ropa o productos que salen al mercado. Mismos precios por pieza que los extras; edita aquí los montos -->
+      <div class="menu-cat lanz" data-reveal>Plan lanzamiento de marca</div>
+      <p class="lanz-intro" data-reveal>Para marcas que salen al mercado. Se suma a cualquier plan mensual y cada pieza se cobra aparte, igual que los servicios extra.</p>
+      <div class="row" data-reveal><span class="n">Diseño de packaging<small>Bolsa, caja o etiqueta con la identidad de tu marca, lista para imprimir</small></span><span class="lead-dots"></span><span class="v">$80</span></div>
+      <div class="row" data-reveal><span class="n">Tarjeta de regalo<small>Tarjeta de agradecimiento o presentación que va dentro de cada pedido</small></span><span class="lead-dots"></span><span class="v">$40</span></div>
+      <div class="row" data-reveal><span class="n">Medidas del logo en el outfit<small>Tamaño y ubicación del logo en cada prenda, listo para tu taller</small></span><span class="lead-dots"></span><span class="v">$40</span></div>
+      <div class="lanz-cta" data-reveal><button class="btn btn-vino" type="button" data-book="Plan lanzamiento de marca">Quiero lanzar mi marca</button></div>
       <p class="price-note" data-reveal>Aparto tu cupo con el 50 %. Pago Móvil, Zelle, Binance o efectivo.</p>
     </div>
   </div>
@@ -805,6 +815,7 @@ html.lenis,html.lenis body{height:auto}
           <button type="button" aria-pressed="false">Grabación</button>
           <button type="button" aria-pressed="false">Automatización</button>
           <button type="button" aria-pressed="false">Meta Ads</button>
+          <button type="button" aria-pressed="false">Plan lanzamiento de marca</button>
           <button type="button" aria-pressed="false">Aún no sé, quiero asesoría</button>
         </div>
       </div>
